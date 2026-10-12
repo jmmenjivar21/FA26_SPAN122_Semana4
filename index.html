@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish 122 · Semana 4 · Capítulo 6.1 Viajes · el pretérito, expresiones de tiempo, conectores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* SPAN 122 · Semana 3 · Capítulo 5.2 · Imágenes (2)
+   gustar-type verbs · tener que · ordinals · weather, seasons, months · naturaleza · una receta */
+
+:root{
+  --navy:#1B2E4F; --navy-light:#2E4977;
+  --terracotta:#C45D3A; --terracotta-light:#E0876A;
+  --gold:#D4A24C; --gold-light:#EBC373;
+  --sage:#6E8C5F; --sage-light:#9CB590;
+  --cream:#FBF7EE; --cream-dark:#F0E9D8;
+  --text:#1a1a1a; --text-light:#444; --text-hint:#666;
+  --soft-shadow:0 4px 16px rgba(27,46,79,0.08);
+  --tile-shadow:0 2px 8px rgba(27,46,79,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Source Sans 3','Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.55;font-size:16px;min-height:100vh;}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;z-index:9999;text-decoration:none;}
+.skip-link:focus{left:8px;top:8px;}
+*:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
+.app{max-width:1200px;margin:0 auto;padding:0 20px 64px;position:relative;}
+.app::before{content:'5';position:fixed;top:18px;right:24px;z-index:0;font-family:'Playfair Display',serif;font-size:9rem;font-weight:800;color:var(--navy);opacity:0.04;pointer-events:none;line-height:1;}
+
+.chap-head{margin-top:36px;padding:32px 36px;border-radius:18px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.chap-head::after{content:'';position:absolute;right:-40px;bottom:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(212,162,76,0.25),transparent 70%);}
+.header-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;background:rgba(212,162,76,0.22);color:var(--gold-light);padding:5px 12px;border-radius:20px;margin-bottom:10px;}
+.header-title{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;line-height:1.15;margin-bottom:6px;}
+.header-subtitle{display:block;font-family:'Space Mono',monospace;font-size:0.85rem;letter-spacing:0.1em;color:var(--gold-light);text-transform:uppercase;}
+
+.prog-bar{height:8px;background:var(--cream-dark);border-radius:4px;margin:6px 0 0;overflow:hidden;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--terracotta),var(--gold));width:0%;transition:width 0.6s ease-out;}
+.completion-wrap{margin:22px 0 20px;}
+.completion-top{display:flex;align-items:center;gap:12px;}
+.completion-label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-hint);}
+.completion-score{margin-left:auto;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;color:var(--sage);background:rgba(110,140,95,0.14);padding:4px 12px;border-radius:20px;white-space:nowrap;}
+.completion-pct{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--terracotta);margin-left:14px;}
+.completion-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.legend-pill{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;background:var(--cream-dark);color:var(--text-light);border:1px solid transparent;cursor:pointer;transition:all 0.2s;}
+.legend-pill:hover{background:#e6d9c2;color:var(--navy);}
+.legend-pill.done{background:rgba(110,140,95,0.18);border-color:var(--sage);color:var(--sage);}
+
+.submit-bar{background:var(--cream-dark);border-radius:12px;padding:14px 18px;margin-bottom:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.submit-bar label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-light);}
+#studentName{flex:1;min-width:210px;border:2px solid #e2d5bd;border-radius:8px;background:#fff;padding:9px 13px;font-family:inherit;font-size:0.94rem;color:var(--navy);}
+#studentName:focus{outline:none;border-color:var(--gold);}
+.btn-download{background:var(--terracotta);color:#fff;border:none;border-radius:8px;padding:10px 20px;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;transition:background 0.2s,transform 0.2s;}
+.btn-download:hover{background:var(--terracotta-light);transform:translateY(-1px);}
+.submit-hint{width:100%;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);letter-spacing:0.04em;}
+
+.quiz-item{background:var(--cream);border-radius:12px;padding:16px 18px;margin-bottom:14px;border-left:4px solid var(--sage);}
+.quiz-item.correct{background:#eef6ea;border-left-color:var(--sage);}
+.quiz-item.wrong{background:#fbeceb;border-left-color:var(--terracotta);}
+.quiz-q{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:2px;}
+.quiz-q .qnum{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);font-weight:400;margin-right:6px;}
+.quiz-gloss{font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-bottom:12px;}
+.quiz-options{display:grid;gap:7px;}
+.quiz-opt{display:flex;align-items:flex-start;gap:10px;background:#fff;border:2px solid var(--cream-dark);border-radius:9px;padding:9px 13px;font-size:0.88rem;cursor:pointer;text-align:left;font-family:inherit;color:var(--text);width:100%;transition:border-color 0.2s,background 0.2s;}
+.quiz-opt:hover{border-color:var(--sage-light);background:#fbfaf6;}
+.quiz-opt.selected{border-color:var(--navy);background:#f3f5fa;}
+.quiz-opt.is-correct{border-color:var(--sage);background:#eef6ea;}
+.quiz-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;}
+.quiz-opt .letter{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);flex-shrink:0;margin-top:2px;}
+.quiz-explain{font-size:0.84rem;margin-top:10px;padding:10px 13px;border-radius:8px;background:#fff;border-left:3px solid var(--gold);display:none;}
+.quiz-explain.show{display:block;}
+.res-check{margin-top:12px;padding-top:12px;border-top:1px dashed var(--cream-dark);}
+.res-check .rc-label{font-family:'Space Mono',monospace;font-size:0.57rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--sage);margin-bottom:6px;}
+.res-check .rc-q{font-size:0.83rem;margin-bottom:4px;color:var(--text);}
+.res-check .rc-gloss{font-size:0.73rem;color:var(--text-hint);font-style:italic;margin-bottom:8px;}
+.res-check .quiz-opt{font-size:0.8rem;padding:7px 11px;}
+
+.task-input{width:100%;border:none;border-bottom:2px solid var(--cream-dark);background:transparent;font-family:inherit;font-size:0.92rem;color:var(--navy);padding:5px 6px;}
+.task-input:focus{outline:none;border-bottom-color:var(--gold);}
+.task-fb{font-family:'Space Mono',monospace;font-size:0.66rem;margin-top:6px;display:none;}
+.task-fb.show{display:block;}
+.task-fb.ok{color:var(--sage);}
+.task-fb.ng{color:var(--terracotta);}
+.task-row{display:flex;align-items:center;gap:10px;background:var(--cream);border-radius:9px;padding:11px 14px;margin-bottom:9px;flex-wrap:wrap;}
+.task-row .rnum{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);min-width:20px;}
+.task-tag{font-family:'Space Mono',monospace;font-size:0.6rem;background:var(--cream-dark);color:var(--navy);padding:3px 9px;border-radius:4px;white-space:nowrap;}
+
+.nav{display:flex;gap:4px;flex-wrap:wrap;background:#fff;padding:6px;border-radius:14px;box-shadow:var(--tile-shadow);margin-bottom:24px;}
+.tab{flex:1 1 auto;min-width:110px;padding:12px 14px;background:transparent;border:none;border-radius:10px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:600;color:var(--text-light);cursor:pointer;transition:all 0.18s ease;min-height:44px;}
+.tab:hover{background:var(--cream-dark);color:var(--navy);}
+.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 6px rgba(27,46,79,0.25);}
+
+.sec{display:none;animation:fadein 0.3s ease;}
+.sec.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.sec-sub{font-family:'Space Mono',monospace;font-size:0.78rem;letter-spacing:0.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:22px;}
+
+.week-hero{background:#fff;padding:26px 30px;border-radius:14px;margin-bottom:24px;box-shadow:var(--tile-shadow);border-left:5px solid var(--terracotta);}
+.week-hero h1{font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--navy);margin-bottom:8px;}
+.week-hero p{font-size:0.97rem;color:var(--text-light);margin-bottom:14px;}
+.topic-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{display:inline-block;padding:5px 11px;background:var(--cream-dark);color:var(--navy);border-radius:14px;font-size:0.78rem;font-weight:600;font-family:'Space Mono',monospace;letter-spacing:0.02em;}
+
+.ch-intro{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.ch-intro::before{content:'';position:absolute;left:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(196,93,58,0.25),transparent 70%);}
+.ch-intro .label{position:relative;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.ch-intro h2{position:relative;font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:10px;color:#fff;}
+.ch-intro p{position:relative;font-size:0.95rem;line-height:1.6;color:rgba(255,255,255,0.95);}
+
+.card{background:#fff;padding:22px 26px;border-radius:14px;margin-bottom:18px;box-shadow:var(--tile-shadow);}
+.card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.card-title .pill{font-family:'Space Mono',monospace;font-size:0.65rem;background:var(--gold);color:#fff;padding:3px 9px;border-radius:12px;letter-spacing:0.1em;}
+
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.obj{background:var(--cream);padding:14px 16px;border-radius:10px;border-left:3px solid var(--sage);display:flex;gap:11px;align-items:flex-start;}
+.obj-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;}
+.obj-text{font-size:0.93rem;color:var(--text);line-height:1.45;}
+
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.res-card{background:#fff;padding:16px 18px;border-radius:12px;border-top:3px solid var(--gold);box-shadow:var(--tile-shadow);}
+.res-card-day{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--terracotta);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.res-card-topic{font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:1.02rem;margin-bottom:10px;}
+.res-card a{display:block;font-size:0.84rem;color:var(--navy-light);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--cream-dark);word-break:break-word;}
+.res-card a:last-child{border-bottom:none;}
+.res-card a:hover{color:var(--terracotta);}
+.res-card a::before{content:'→ ';color:var(--gold);font-weight:700;}
+
+.vocab-hint{text-align:center;font-size:0.82rem;color:var(--text-hint);font-style:italic;margin-bottom:14px;}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px;}
+.vocab-card{perspective:1000px;height:118px;cursor:pointer;}
+.vocab-card-inner{position:relative;width:100%;height:100%;transition:transform 0.6s;transform-style:preserve-3d;}
+.vocab-card.flipped .vocab-card-inner{transform:rotateY(180deg);}
+.vocab-front,.vocab-back{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;border-radius:11px;text-align:center;box-shadow:var(--tile-shadow);}
+.vocab-front{background:#fff;border:2px solid var(--cream-dark);font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:0.98rem;}
+.vocab-front small{display:block;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);font-weight:400;margin-top:5px;letter-spacing:0.04em;}
+.vocab-back{background:linear-gradient(135deg,var(--terracotta),var(--terracotta-light));color:#fff;transform:rotateY(180deg);font-size:0.92rem;font-weight:600;}
+.vocab-ex{display:block;font-size:0.74rem;font-weight:400;font-style:italic;margin-top:6px;opacity:0.92;padding:0 18px;}
+.vocab-sound{position:absolute;top:6px;right:9px;font-size:0.75rem;opacity:0.55;}
+.vocab-replay{position:absolute;bottom:6px;right:8px;background:rgba(255,255,255,0.22);border:none;border-radius:50%;width:30px;height:30px;font-size:0.85rem;cursor:pointer;color:#fff;line-height:30px;padding:0;}
+.vocab-replay:hover,.vocab-replay:focus-visible{background:rgba(255,255,255,0.4);outline:2px solid #fff;}
+.vocab-card:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:12px;}
+.vocab-card.conn-card .vocab-front{border-color:var(--sage-light);color:var(--sage);}
+.vocab-card.conn-card .vocab-back{background:linear-gradient(135deg,var(--sage),#5A7350);}
+
+.gbox{background:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--tile-shadow);border-top:4px solid var(--terracotta);}
+.gbox.alt{border-top-color:var(--sage);}
+.gbox.alt2{border-top-color:var(--gold);}
+.gbox h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.gbox h3 .num{font-family:'Space Mono',monospace;font-size:0.7rem;background:var(--terracotta);color:#fff;padding:4px 10px;border-radius:11px;letter-spacing:0.1em;}
+.gbox.alt h3 .num{background:var(--sage);}
+.gbox.alt2 h3 .num{background:var(--gold);color:var(--navy);}
+.gbox .sub{font-size:0.9rem;color:var(--text-hint);margin-bottom:16px;font-style:italic;}
+
+.conj-table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(27,46,79,0.05);}
+.conj-table th,.conj-table td{padding:9px 13px;text-align:left;font-size:0.9rem;border-bottom:1px solid var(--cream-dark);}
+.conj-table th{background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:700;}
+.conj-table td .pn{color:var(--text-hint);}
+.conj-table td .fm{color:var(--terracotta);font-weight:700;font-style:italic;}
+.conj-table .accent{color:var(--terracotta);font-weight:700;}
+.conj-table tr:last-child td{border-bottom:none;}
+
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0;}
+@media(max-width:740px){.three-col{grid-template-columns:1fr;}}
+.col-card{background:var(--cream);padding:16px 18px;border-radius:10px;border-top:4px solid var(--terracotta);}
+.col-card.gd{border-top-color:var(--gold);}
+.col-card.sg{border-top-color:var(--sage);}
+.col-card h4{font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--navy);margin-bottom:4px;}
+.col-card .meaning{font-family:'Space Mono',monospace;font-size:0.68rem;color:var(--text-hint);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;}
+.col-card .ex{font-style:italic;font-size:0.85rem;color:var(--text);background:#fff;padding:7px 10px;border-radius:6px;margin-bottom:5px;}
+.col-card .ex strong{color:var(--terracotta);font-style:normal;}
+.col-card.gd .ex strong{color:#A07A2D;}
+.col-card.sg .ex strong{color:var(--sage);}
+
+.ex-box{background:var(--cream);border-left:3px solid var(--sage);padding:12px 16px;border-radius:8px;margin:14px 0;}
+.ex-box p{font-size:0.9rem;color:var(--text);margin:4px 0;}
+.ex-box em{color:var(--text-hint);font-style:italic;}
+.ojo{background:#FFF6F0;border-left:4px solid var(--terracotta);padding:14px 18px;border-radius:8px;margin:16px 0;}
+.ojo-title{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--terracotta);letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;}
+.ojo p{font-size:0.92rem;color:var(--text);line-height:1.55;}
+.ojo em{color:var(--terracotta);font-style:italic;font-weight:600;}
+
+.ex-item{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--cream-dark);font-size:0.97rem;}
+.ex-item:last-of-type{border-bottom:none;}
+.ex-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.78rem;font-weight:700;}
+.ex-text{flex:1;line-height:1.9;color:var(--text);}
+.ex-hint{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--terracotta);margin-left:4px;}
+.blk{display:inline-block;width:120px;padding:6px 10px;border:2px solid var(--cream-dark);border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--navy);background:#fff;outline:none;transition:border-color 0.15s;}
+.blk.wide{width:170px;}
+.blk:focus{border-color:var(--gold);}
+.blk.ok{border-color:var(--sage);background:#F4F8F0;color:#3F5C32;}
+.blk.ng{border-color:var(--terracotta);background:#FFF0EA;color:#8E3A1F;}
+
+.chk-btn,.rst-btn,.toggle-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-size:0.92rem;font-weight:700;cursor:pointer;transition:all 0.15s;min-height:42px;margin-top:14px;}
+.chk-btn{background:var(--navy);color:#fff;}
+.chk-btn:hover{background:var(--navy-light);}
+.rst-btn{background:#fff;color:var(--navy);border:2px solid var(--cream-dark);margin-left:6px;}
+.rst-btn:hover{border-color:var(--navy);}
+.toggle-btn{background:var(--gold);color:var(--navy);margin-left:6px;}
+.toggle-btn:hover{background:var(--gold-light);}
+.res-msg{margin-top:12px;font-size:0.93rem;font-weight:700;min-height:22px;}
+.res-msg.ok{color:#3F5C32;}
+.res-msg.ng{color:#8E3A1F;}
+
+.word-bank{background:var(--cream);padding:11px 14px;border-radius:8px;margin-bottom:14px;font-size:0.88rem;}
+.word-bank-label{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+.word-bank-words span{display:inline-block;background:#fff;padding:3px 9px;border-radius:11px;margin:2px 3px;font-size:0.84rem;border:1px solid var(--cream-dark);color:var(--navy);font-weight:700;}
+
+/* Matching */
+.match-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.match-col-label{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-hint);margin-bottom:6px;}
+.mi{padding:11px 13px;border:2px solid var(--cream-dark);border-radius:9px;cursor:pointer;font-size:0.86rem;background:#fff;transition:all 0.12s;line-height:1.4;margin-bottom:7px;color:var(--text);}
+.mi:hover{border-color:var(--sage-light);}
+.mi.sel{border-color:var(--navy);background:#f3f5fa;color:var(--navy);}
+.mi.done{border-color:var(--sage);background:#eef6ea;color:#3F5C32;pointer-events:none;opacity:0.75;}
+.mi.bad{border-color:var(--terracotta);background:#fbeceb;}
+
+/* Conjugation game */
+.game-wrap{background:var(--cream);border-radius:14px;padding:22px;text-align:center;}
+.game-scorebar{display:flex;justify-content:center;gap:22px;margin-bottom:16px;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);}
+.game-scorebar b{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--terracotta);margin-top:2px;}
+.game-prompt{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);margin:10px 0 4px;}
+.game-sub{font-size:0.85rem;color:var(--text-hint);font-style:italic;margin-bottom:18px;}
+.game-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin:0 auto;}
+@media(max-width:520px){.game-opts{grid-template-columns:1fr;}}
+.game-opt{background:#fff;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 10px;font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);cursor:pointer;transition:all 0.12s;}
+.game-opt:hover{border-color:var(--sage-light);transform:translateY(-2px);}
+.game-opt.is-correct{border-color:var(--sage);background:#eef6ea;color:#3F5C32;}
+.game-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;color:#8E3A1F;}
+.game-feedback{min-height:22px;margin-top:14px;font-weight:700;font-size:0.95rem;}
+.game-feedback.ok{color:#3F5C32;}
+.game-feedback.ng{color:#8E3A1F;}
+.game-done{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);}
+
+.cult-card{background:linear-gradient(135deg,var(--sage) 0%,#5A7350 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:18px;box-shadow:var(--soft-shadow);}
+.cult-card .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.cult-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px;color:#fff;}
+.cult-card p{font-size:0.95rem;line-height:1.65;color:rgba(255,255,255,0.95);}
+.cult-card .fact-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.cult-card .fact-pills span{background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;}
+
+.footer{margin-top:36px;padding:20px;text-align:center;font-family:'Space Mono',monospace;font-size:0.76rem;color:var(--text-hint);letter-spacing:0.05em;}
+
+@media(max-width:600px){
+  .chap-head{padding:24px 22px;}
+  .header-title{font-size:1.7rem;}
+  .gbox,.card,.cult-card,.ch-intro{padding:18px 20px;}
+  .three-col{grid-template-columns:1fr;}
+  .ex-item{flex-wrap:wrap;}
+}
+
+/* ── Semana 2 additions ── */
+.plan-card{background:#fff;padding:16px 18px;border-radius:12px;border-top:3px solid var(--gold);box-shadow:var(--tile-shadow);}
+.plan-card.inclass{border-top-color:var(--terracotta);}
+.plan-card.practice{border-top-color:var(--sage);}
+.plan-card ul{list-style:none;margin:0;padding:0;}
+.plan-card li{font-size:0.86rem;color:var(--text);padding:6px 0;border-bottom:1px solid var(--cream-dark);}
+.plan-card li:last-child{border-bottom:none;}
+.plan-card li::before{content:'→ ';color:var(--gold);font-weight:700;}
+
+.icon-speaker{width:14px;height:14px;display:inline-block;vertical-align:middle;}
+.vocab-sound{display:flex;align-items:center;}
+.vocab-replay{display:flex;align-items:center;justify-content:center;}
+.vocab-replay svg{width:14px;height:14px;}
+.vocab-card.sport-card .vocab-front{border-color:var(--gold-light);color:#8A6420;}
+.vocab-card.sport-card .vocab-back{background:linear-gradient(135deg,var(--gold),#B8862F);}
+.vocab-card.time-card .vocab-front{border-color:#b9c4d8;color:var(--navy-light);}
+.vocab-card.time-card .vocab-back{background:linear-gradient(135deg,var(--navy-light),var(--navy));}
+.audio-note{text-align:center;font-size:0.75rem;color:var(--text-hint);margin:-6px 0 16px;}
+
+/* The boot */
+.boot-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center;margin:14px 0;}
+@media(max-width:740px){.boot-wrap{grid-template-columns:1fr;}}
+.boot{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:360px;}
+.boot div{padding:12px 10px;border-radius:8px;text-align:center;font-size:0.95rem;}
+.boot .in{background:var(--terracotta);color:#fff;font-weight:700;}
+.boot .out{background:#fff;border:2px dashed var(--cream-dark);color:var(--text-light);}
+.boot small{display:block;font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.04em;opacity:0.85;font-weight:400;margin-bottom:2px;}
+.boot-legend{font-size:0.9rem;color:var(--text-light);line-height:1.6;}
+.boot-legend p{margin-bottom:8px;}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:6px;}
+
+.chg{color:var(--terracotta);font-weight:700;}
+.conj-table td.nochg{color:var(--text);font-weight:400;font-style:normal;background:#FBFAF6;}
+
+.rule-list{counter-reset:rule;display:grid;gap:10px;margin:14px 0;}
+.rule{background:var(--cream);border-radius:10px;padding:13px 16px 13px 52px;position:relative;}
+.rule::before{counter-increment:rule;content:counter(rule);position:absolute;left:14px;top:13px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.75rem;font-weight:700;}
+.rule h4{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--navy);margin-bottom:4px;}
+.rule p{font-size:0.9rem;color:var(--text);margin:2px 0;}
+.rule .ok{color:#3F5C32;font-weight:700;}
+.rule .no{color:#8E3A1F;text-decoration:line-through;}
+
+/* Tarea: Mi rutina deportiva */
+.task-area{width:100%;min-height:210px;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 16px;font-family:inherit;font-size:0.97rem;line-height:1.6;color:var(--navy);background:#fff;resize:vertical;}
+.task-area:focus{outline:none;border-color:var(--gold);}
+.wc{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);margin-top:6px;text-align:right;}
+.checklist{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:8px;margin:14px 0 4px;padding:0;}
+.checklist li{background:var(--cream);border-radius:9px;padding:10px 12px 10px 38px;font-size:0.86rem;position:relative;color:var(--text-light);border:2px solid transparent;}
+.checklist li::before{content:'';position:absolute;left:12px;top:11px;width:16px;height:16px;border-radius:4px;border:2px solid #cdbf9f;background:#fff;}
+.checklist li.met{border-color:var(--sage);background:#eef6ea;color:#3F5C32;}
+.checklist li.met::before{background:var(--sage);border-color:var(--sage);}
+.checklist li.met::after{content:'';position:absolute;left:17px;top:13px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+.checklist li b{color:var(--navy);}
+.model{background:#fff;border:1px dashed var(--gold);border-radius:10px;padding:14px 18px;margin:14px 0;font-size:0.92rem;line-height:1.7;}
+.model .ml{font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:#A07A2D;margin-bottom:6px;display:block;}
+.model mark{background:rgba(212,162,76,0.25);padding:0 2px;border-radius:3px;color:inherit;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0;}
+.step{background:var(--cream);border-radius:10px;padding:12px 14px;font-size:0.88rem;}
+.step b{display:block;font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--terracotta);margin-bottom:4px;}
+
+
+/* ── Semana 3 additions ── */
+.vocab-card.nat-card .vocab-front{border-color:var(--sage-light);color:#4d6a40;}
+.vocab-card.nat-card .vocab-back{background:linear-gradient(135deg,#4d6a40,var(--sage));}
+.formula{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;}
+.formula span{background:var(--cream);border-radius:9px;padding:9px 13px;font-size:0.92rem;font-weight:700;color:var(--navy);}
+.formula span small{display:block;font-family:'Space Mono',monospace;font-size:0.58rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);font-weight:400;}
+.formula .hl{background:var(--terracotta);color:#fff;}
+.formula .hl small{color:rgba(255,255,255,0.8);}
+.formula i{font-style:normal;color:var(--text-hint);font-weight:700;}
+.season-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0;}
+@media(max-width:740px){.season-grid{grid-template-columns:1fr 1fr;}}
+.season{background:var(--cream);border-radius:10px;padding:13px 14px;border-top:4px solid var(--sage);}
+.season.s2{border-top-color:var(--gold);} .season.s3{border-top-color:var(--terracotta);} .season.s4{border-top-color:var(--navy-light);}
+.season h4{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--navy);margin-bottom:6px;}
+.season p{font-size:0.82rem;color:var(--text);margin:3px 0;}
+.season p b{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);display:block;}
+.reading{background:var(--cream);border-radius:10px;padding:16px 20px;font-size:0.98rem;line-height:1.8;margin-bottom:14px;}
+.reading p{margin-bottom:10px;}
+.reading .gl{font-size:0.8rem;color:var(--text-hint);font-style:italic;}
+.rec-label{display:block;font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-light);margin:14px 0 6px;}
+.rec-input{width:100%;border:2px solid var(--cream-dark);border-radius:10px;padding:11px 14px;font-family:inherit;font-size:0.97rem;color:var(--navy);background:#fff;}
+.rec-input:focus{outline:none;border-color:var(--gold);}
+.task-area.short{min-height:110px;}
+.rec-card{background:#fff;border:1px dashed var(--gold);border-radius:10px;padding:16px 20px;margin:14px 0;font-size:0.92rem;line-height:1.7;}
+.rec-card h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);margin-bottom:6px;}
+.rec-card ol{margin:6px 0 6px 20px;} .rec-card li{margin-bottom:3px;}
+.rec-card mark{background:rgba(212,162,76,0.25);padding:0 2px;border-radius:3px;color:inherit;}
+.rec-card .ml{font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:#A07A2D;margin-bottom:6px;display:block;}
+
+/* ── Semana 4 additions ── */
+.coin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 6px;}
+.coin{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);border-radius:10px;padding:10px 12px;}
+.coin b{display:block;font-family:'Playfair Display',serif;font-size:1rem;}
+.coin span{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.06em;text-transform:uppercase;opacity:0.85;}
+.timeline{display:flex;gap:0;margin:16px 0 10px;overflow-x:auto;padding-bottom:4px;}
+.timeline div{flex:1;min-width:92px;text-align:center;padding:30px 6px 8px;position:relative;font-size:0.84rem;color:var(--navy);font-weight:700;}
+.timeline div::before{content:'';position:absolute;left:0;right:0;top:12px;height:3px;background:var(--cream-dark);}
+.timeline div::after{content:'';position:absolute;left:50%;top:6px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--terracotta);border:2px solid #fff;box-shadow:0 0 0 2px var(--terracotta);}
+.timeline div.now::after{background:var(--sage);box-shadow:0 0 0 2px var(--sage);}
+.timeline small{display:block;font-weight:400;color:var(--text-hint);font-size:0.72rem;margin-top:2px;}
+.budget{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:0.88rem;}
+.budget td{padding:7px 10px;border-bottom:1px solid rgba(255,255,255,0.2);}
+.budget td:last-child{text-align:right;font-family:'Space Mono',monospace;font-size:0.8rem;}
+.vocab-card.trip-card .vocab-front{border-color:#e7b6a4;color:#a3492b;}
+.vocab-card.trip-card .vocab-back{background:linear-gradient(135deg,var(--terracotta),#9f4527);}
+
+/* Video Log 2 (from Video Log 1) */
+.vl-meter{margin-bottom:6px;}
+.vl-meter-top{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-light);margin-bottom:6px;}
+.vl-meter-top #vlTime{color:var(--terracotta);font-weight:700;}
+.vl-bar{position:relative;height:12px;background:var(--cream-dark);border-radius:6px;overflow:hidden;}
+.vl-zone{position:absolute;left:50%;width:25%;top:0;bottom:0;background:rgba(110,140,95,0.28);}
+.vl-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--terracotta),var(--gold));border-radius:6px;transition:width 0.3s;opacity:0.9;}
+.vl-scale{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--text-hint);margin-top:4px;}
+.vl-note{font-size:0.78rem;color:var(--text-hint);font-style:italic;margin-top:10px;}
+.vl-part{border:2px solid var(--cream-dark);border-radius:12px;padding:16px 18px;margin-top:14px;background:#fff;transition:border-color 0.2s;}
+.vl-part.met{border-color:var(--sage);}
+.vl-part-head{display:flex;gap:12px;align-items:flex-start;}
+.vl-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:700;font-size:0.85rem;}
+.vl-part.met .vl-num{background:var(--sage);}
+.vl-part h4{font-family:'Playfair Display',serif;font-size:1.08rem;color:var(--navy);margin-bottom:3px;}
+.vl-part .vl-desc{font-size:0.88rem;color:var(--text-light);line-height:1.5;}
+.vl-tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px;}
+.vl-tag{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.04em;padding:3px 9px;border-radius:10px;background:var(--cream-dark);color:var(--navy);}
+.vl-starters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.vl-starter{background:var(--cream);border:1px dashed var(--gold);color:#7A5A1E;border-radius:14px;padding:4px 11px;font-size:0.8rem;cursor:pointer;font-family:inherit;}
+.vl-starter:hover{background:#fff6e3;}
+.vl-part textarea{width:100%;min-height:92px;border:2px solid var(--cream-dark);border-radius:9px;padding:10px 12px;font-family:inherit;font-size:0.95rem;line-height:1.55;color:var(--navy);resize:vertical;}
+.vl-part textarea:focus{outline:none;border-color:var(--gold);}
+.vl-part-fb{font-family:'Space Mono',monospace;font-size:0.68rem;margin-top:6px;color:var(--text-hint);}
+.vl-part-fb .ok{color:var(--sage);font-weight:700;}
+.vl-part-fb .ng{color:var(--terracotta);font-weight:700;}
+.vl-script{background:var(--cream);border-radius:10px;padding:16px 18px;font-size:0.95rem;line-height:1.75;max-height:320px;overflow:auto;}
+.vl-script p{margin-bottom:8px;}
+.vl-script b{font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--terracotta);letter-spacing:0.06em;margin-right:6px;}
+.vl-errs{font-size:0.86rem;color:#8E3A1F;margin-top:8px;}
+.vl-actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.vl-actions .rst-btn,.vl-actions .toggle-btn{margin-left:0;}
+.vl-open{cursor:pointer;}
+.vl-manual{display:flex;gap:8px;align-items:center;font-size:0.86rem;}
+.vl-modal{position:fixed;inset:0;background:rgba(27,46,79,0.72);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px;}
+.vl-modal[hidden]{display:none;}
+.vl-modal-box{background:#fff;border-radius:16px;width:min(900px,100%);max-height:92vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--soft-shadow);}
+.vl-modal-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--navy);color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;}
+.vl-modal-head .chk-btn,.vl-modal-head .rst-btn{margin-top:0;}
+.vl-timer{font-family:'Space Mono',monospace;font-size:1.8rem;font-weight:700;color:var(--gold-light);}
+.vl-timer.in{color:#B8D8A8;}
+.vl-timer.over{color:#F4A58A;}
+.vl-zone-note{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);padding:8px 20px;background:var(--cream);}
+.vl-prompter{padding:22px 26px;overflow:auto;font-size:1.45rem;line-height:1.7;color:var(--navy);}
+.vl-prompter p{margin-bottom:16px;}
+.vl-prompter b{display:block;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;color:var(--terracotta);text-transform:uppercase;}
+@media(max-width:600px){.vl-prompter{font-size:1.15rem;padding:16px;}}
+.vl-due{display:inline-block;background:rgba(255,255,255,0.18);padding:5px 12px;border-radius:14px;font-size:0.85rem;font-weight:700;margin-top:10px;}
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px;}
+.tool{background:var(--cream);border-radius:10px;padding:14px 16px;border-top:4px solid var(--terracotta);}
+.tool.t2{border-top-color:var(--gold);} .tool.t3{border-top-color:var(--sage);} .tool.t4{border-top-color:var(--navy-light);}
+.tool h4{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--navy);margin-bottom:6px;}
+.tool p{font-size:0.86rem;color:var(--text);margin:4px 0;line-height:1.5;}
+.tool table{width:100%;border-collapse:collapse;font-size:0.84rem;margin:6px 0;}
+.tool td{padding:3px 6px;border-bottom:1px solid var(--cream-dark);}
+.tool td:first-child{color:var(--text-hint);font-family:'Space Mono',monospace;font-size:0.68rem;}
+.tool .ok{color:#3F5C32;font-weight:700;}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="app">
+
+  <div class="chap-head">
+    <span class="header-badge">SPSCC · ESP 122 · Semana 4</span>
+    <span class="header-title">Capítulo 6.1 · Viajes</span>
+    <span class="header-subtitle">Talking About the Past · Travel, Lodging &amp; Money</span>
+  </div>
+
+  <div class="completion-wrap">
+    <div class="completion-top">
+      <span class="completion-label">Mi progreso · My progress</span>
+      <span class="completion-score" id="completionScore">★ 0% correcto</span>
+      <span class="completion-pct" id="completionPct">0%</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="pf" style="width:0%"></div></div>
+    <div class="completion-legend" id="completionLegend"></div>
+  </div>
+
+  <div class="submit-bar">
+    <label for="studentName">Nombre / Name</label>
+    <input id="studentName" type="text" placeholder="Type your full name here" autocomplete="name">
+    <button class="btn-download" onclick="downloadReport()">↓ Download Report</button>
+    <span class="submit-hint">Enter your name, work through every tab, then download your report and submit it on Canvas.</span>
+  </div>
+
+  <nav class="nav" aria-label="Week 4 sections">
+    <button class="tab active" onclick="switchTab('ov',this)">Inicio</button>
+    <button class="tab" onclick="switchTab('vo',this)">Vocabulario</button>
+    <button class="tab" onclick="switchTab('gr',this)">Gramática</button>
+    <button class="tab" onclick="switchTab('ej',this)">Ejercicios</button>
+    <button class="tab" onclick="switchTab('ta',this)">Tarea · Mercado</button>
+    <button class="tab" onclick="switchTab('vl',this)">Video Log 2</button>
+    <button class="tab" onclick="switchTab('ju',this)">Juegos</button>
+  </nav>
+
+  <div id="main-content"></div>
+
+  <!-- ═══ INICIO ═══ -->
+  <section class="sec active" id="sec-ov">
+    <h2 class="sec-title">Semana 4 · Viajes: hablar del pasado</h2>
+    <p class="sec-sub">Capítulo 6.1 · regular preterite · time expressions · porque, como, por eso, así que · travel &amp; lodging · money</p>
+
+    <div class="ch-intro">
+      <div class="label">Empezamos el Capítulo 6 · Welcome to Week 4</div>
+      <h2>Tell the story of a trip: where you went, what you did, and what you paid</h2>
+      <p>Until now you have talked about the present: your routine, your likes, the weather today. This week you start talking about the <em>past</em>. You'll learn the <strong>preterite</strong> of regular verbs (<em>viajé, comí, salimos</em>), the <strong>time expressions</strong> that go with it (<em>ayer, la semana pasada, hace dos años</em>), and four connectors that explain <em>why</em> and <em>so what</em>: <strong>porque, como, por eso, así que</strong>. The vocabulary takes you from the airport to the hostel to the market, and the cultural note looks at <strong>currencies and travel budgets</strong>. You'll finish with your <strong>Tarea: Comprar en un mercado</strong>.</p>
+    </div>
+
+    <div class="week-hero">
+      <h1>What this week covers</h1>
+      <p>Everything here is graded automatically, so you can see which topics still need work before class.</p>
+      <div class="topic-chips">
+        <span class="chip">-ar: -é, -aste, -ó, -amos, -aron</span>
+        <span class="chip">-er / -ir: -í, -iste, -ió, -imos, -ieron</span>
+        <span class="chip">pagué · busqué · empecé</span>
+        <span class="chip">ayer · la semana pasada · hace…</span>
+        <span class="chip">porque · como</span>
+        <span class="chip">por eso · así que</span>
+        <span class="chip">el vuelo · la maleta · el pasaporte</span>
+        <span class="chip">hotel · hostal · albergue</span>
+        <span class="chip">en el mercado · el presupuesto</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Objetivos · By the end of this week you can… <span class="pill">CAP 6.1</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text">Conjugate regular <strong>-ar</strong> verbs in the preterite: <em>viajé, viajaste, viajó, viajamos, viajaron</em>.</span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text">Conjugate regular <strong>-er</strong> and <strong>-ir</strong> verbs in the preterite: <em>comí, saliste, vivió…</em></span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text">Say <strong>when</strong> something happened: <em>ayer, anoche, la semana pasada, hace dos años</em>.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">Explain causes with <strong>porque</strong> and <strong>como</strong>, and results with <strong>por eso</strong> and <strong>así que</strong>.</span></div>
+        <div class="obj"><span class="obj-num">5</span><span class="obj-text">Talk about <strong>flights, luggage and lodging</strong>: <em>facturar, hacer escala, alojarse en un hostal</em>.</span></div>
+        <div class="obj"><span class="obj-num">6</span><span class="obj-text">Tell the story of a purchase at a <strong>market</strong>: <em>compré, pagué, regateé</em>.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Plan de la semana <span class="pill">SEMANA 4</span></div>
+      <div class="res-grid">
+        <div class="plan-card">
+          <div class="res-card-day">Lunes · self-guided</div>
+          <div class="res-card-topic">Vocabulario + el pretérito</div>
+          <ul><li>Flip every flashcard in <em>Vocabulario</em></li><li>Read Gramática G1 to G3</li></ul>
+        </div>
+        <div class="plan-card inclass">
+          <div class="res-card-day">Martes · en clase</div>
+          <div class="res-card-topic">El pretérito: -ar, -er, -ir</div>
+          <ul><li>¿Adónde viajaste? ¿Qué compraste? ¿Qué comiste?</li><li>Viajes: el aeropuerto y el alojamiento</li></ul>
+        </div>
+        <div class="plan-card practice">
+          <div class="res-card-day">Miércoles · práctica</div>
+          <div class="res-card-topic">Ejercicios + Juegos</div>
+          <ul><li>Ejercicios 1, 2, 3 and 6</li><li>Juego 3 · Reto rápido</li><li>Read G4 and G5</li></ul>
+        </div>
+        <div class="plan-card inclass">
+          <div class="res-card-day">Jueves · en clase</div>
+          <div class="res-card-topic">Cuándo, por qué y qué pasó</div>
+          <ul><li>Time expressions and connectors</li><li>Ejercicios 4, 5, 7 and 8</li><li>Tarea · Comprar en un mercado</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cult-card">
+      <div class="label">Nota cultural · Finanzas</div>
+      <h3>Monedas y el presupuesto de un viaje</h3>
+      <p>Before a trip, you need to know <strong>la moneda</strong> (the currency) of each country, because many Spanish-speaking countries have their own. In Mexico you pay in <em>pesos</em>, in Guatemala in <em>quetzales</em> (named after the national bird), in Costa Rica in <em>colones</em> (after Cristóbal Colón), and in Peru in <em>soles</em>. Some countries use the U.S. dollar: <strong>Ecuador</strong> and <strong>El Salvador</strong> use it as their national currency, and <strong>Panama</strong> uses it alongside its own <em>balboa</em>. In Spain you pay in <em>euros</em>.</p>
+      <div class="coin-grid">
+        <div class="coin"><span>México</span><b>el peso</b></div>
+        <div class="coin"><span>Guatemala</span><b>el quetzal</b></div>
+        <div class="coin"><span>Costa Rica</span><b>el colón</b></div>
+        <div class="coin"><span>Perú</span><b>el sol</b></div>
+        <div class="coin"><span>El Salvador · Ecuador</span><b>el dólar</b></div>
+        <div class="coin"><span>España</span><b>el euro</b></div>
+      </div>
+      <p style="margin-top:12px;">A smart traveler makes <strong>un presupuesto</strong> (a budget) with four parts: <em>el transporte, el alojamiento, la comida</em> and <em>los recuerdos</em> (souvenirs). Lodging is often the biggest cost, which is why many young travelers choose <em>un hostal</em> or <em>un albergue juvenil</em> instead of a hotel. In many markets, small shops and taxis, people still <strong>pagan en efectivo</strong> (pay in cash), and in craft markets it is common to <strong>regatear</strong> (bargain) politely. Check the exchange rate (<em>el tipo de cambio</em>) before you travel: it changes every day.</p>
+      <div class="fact-pills">
+        <span>la moneda</span>
+        <span>el presupuesto</span>
+        <span>pagar en efectivo</span>
+        <span>regatear</span>
+        <span>el tipo de cambio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VOCABULARIO ═══ -->
+  <section class="sec" id="sec-vo">
+    <h2 class="sec-title">Vocabulario · De viaje</h2>
+    <p class="sec-sub">the trip · lodging · travel actions · time expressions · connectors · shopping &amp; money</p>
+
+    <p class="vocab-hint">Tap any card to flip it: you'll see the translation and an example, and hear both. Test yourself before flipping, and tap the speaker on the back to hear it again.</p>
+    <p class="audio-note">Audio uses your browser's Spanish voice. If you hear nothing, check your volume or try Chrome or Edge.</p>
+
+    <div class="card">
+      <div class="card-title">El viaje · En el aeropuerto <span class="pill">14 WORDS</span></div>
+      <div class="vocab-grid" id="fcTrip"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">El alojamiento · ¿Dónde te alojaste? <span class="pill">8 WORDS</span></div>
+      <div class="vocab-grid" id="fcLodge"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Acciones de viaje <span class="pill">10 VERBS</span></div>
+      <div class="vocab-grid" id="fcActions"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Expresiones de tiempo · el pasado <span class="pill">9 EXPRESSIONS</span></div>
+      <div class="vocab-grid" id="fcTime"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Conectores · causa y consecuencia <span class="pill">6 WORDS</span></div>
+      <div class="vocab-grid" id="fcConn"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">En la tienda y el mercado · Finanzas <span class="pill">14 WORDS</span></div>
+      <div class="vocab-grid" id="fcShop"></div>
+    </div>
+  </section>
+
+  <!-- ═══ GRAMÁTICA ═══ -->
+  <section class="sec" id="sec-gr">
+    <h2 class="sec-title">Gramática · Capítulo 6.1</h2>
+    <p class="sec-sub">preterite -ar · preterite -er/-ir · spelling changes · time expressions · cause · consequence</p>
+
+    <!-- G1 -ar -->
+    <div class="gbox">
+      <h3><span class="num">G1</span>El pretérito · verbos regulares en -AR</h3>
+      <p class="sub">The <em>pretérito</em> tells what happened at a specific moment in the past: a finished action. Drop the <em>-ar</em> and add the endings.</p>
+      <div class="formula">
+        <span><small>infinitive</small>viajar</span><i>→</i>
+        <span><small>stem</small>viaj-</span><i>+</i>
+        <span class="hl"><small>ending</small>-é</span><i>=</i>
+        <span><small>English</small>viajé · I traveled</span>
+      </div>
+      <table class="conj-table">
+        <thead><tr><th>Sujeto</th><th>Terminación</th><th>viajar</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pn">yo</span></td><td class="accent">-é</td><td>viaj<strong>é</strong></td><td>Viajé a México en julio.</td></tr>
+          <tr><td><span class="pn">tú</span></td><td class="accent">-aste</td><td>viaj<strong>aste</strong></td><td>¿Compraste los boletos?</td></tr>
+          <tr><td><span class="pn">él / ella / Ud.</span></td><td class="accent">-ó</td><td>viaj<strong>ó</strong></td><td>El avión aterrizó a las seis.</td></tr>
+          <tr><td><span class="pn">nosotros/as</span></td><td class="accent">-amos</td><td>viaj<strong>amos</strong></td><td>Reservamos un hostal.</td></tr>
+          <tr><td><span class="pn">ellos / Uds.</span></td><td class="accent">-aron</td><td>viaj<strong>aron</strong></td><td>Mis padres visitaron el museo.</td></tr>
+        </tbody>
+      </table>
+      <div class="ojo"><div class="ojo-title">¡OJO! · the accent changes the meaning</div><p><em>viajo</em> = I travel (present) · <em>viajó</em> = he/she traveled. <em>el viaje</em> = the trip · <em>viajé</em> = I traveled. Always write the accent on <strong>-é</strong> and <strong>-ó</strong>. The <em>nosotros</em> form is the same as the present (<em>viajamos</em>): words like <em>ayer</em> tell you it is the past.</p></div>
+    </div>
+
+    <!-- G2 -er/-ir -->
+    <div class="gbox alt">
+      <h3><span class="num">G2</span>El pretérito · verbos regulares en -ER e -IR</h3>
+      <p class="sub">Good news: <em>-er</em> and <em>-ir</em> verbs share <strong>the same endings</strong> in the preterite.</p>
+      <table class="conj-table">
+        <thead><tr><th>Sujeto</th><th>Terminación</th><th>comer</th><th>salir</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pn">yo</span></td><td class="accent">-í</td><td>com<strong>í</strong></td><td>sal<strong>í</strong></td></tr>
+          <tr><td><span class="pn">tú</span></td><td class="accent">-iste</td><td>com<strong>iste</strong></td><td>sal<strong>iste</strong></td></tr>
+          <tr><td><span class="pn">él / ella / Ud.</span></td><td class="accent">-ió</td><td>com<strong>ió</strong></td><td>sal<strong>ió</strong></td></tr>
+          <tr><td><span class="pn">nosotros/as</span></td><td class="accent">-imos</td><td>com<strong>imos</strong></td><td>sal<strong>imos</strong></td></tr>
+          <tr><td><span class="pn">ellos / Uds.</span></td><td class="accent">-ieron</td><td>com<strong>ieron</strong></td><td>sal<strong>ieron</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="ex-box">
+        <p><strong>Más verbos:</strong> <em>aprender → aprendí</em> · <em>perder → perdió</em> · <em>recorrer → recorrimos</em> · <em>escribir → escribiste</em> · <em>vivir → vivieron</em> · <em>beber → bebí</em>.</p>
+        <p><strong>Stem-changing verbs</strong> from Capítulo 5 have <em>no</em> stem change in the preterite when they end in <em>-ar</em> or <em>-er</em>: <em>encontrar → encontré</em>, <em>volver → volví</em>, <em>despertarse → me desperté</em>.</p>
+      </div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · -ir nosotros = present</div><p><em>Vivimos en Olympia</em> can mean "we live" or "we lived." Context tells you: <em>El año pasado vivimos en Madrid.</em> Irregular verbs like <em>ir</em> and <em>hacer</em> come later; this week, use regular verbs.</p></div>
+    </div>
+
+    <!-- G3 spelling -->
+    <div class="gbox alt2">
+      <h3><span class="num">G3</span>Cambios ortográficos en la forma YO · -car, -gar, -zar</h3>
+      <p class="sub">These verbs are regular, but the <em>yo</em> form changes its spelling to keep the same sound. Only <em>yo</em> changes.</p>
+      <div class="three-col">
+        <div class="col-card">
+          <h4>-car → -qué</h4>
+          <div class="meaning">c becomes qu</div>
+          <div class="ex">buscar → <strong>busqué</strong></div>
+          <div class="ex">sacar → <strong>saqué</strong> · tocar → <strong>toqué</strong></div>
+        </div>
+        <div class="col-card gd">
+          <h4>-gar → -gué</h4>
+          <div class="meaning">g becomes gu</div>
+          <div class="ex">pagar → <strong>pagué</strong></div>
+          <div class="ex">llegar → <strong>llegué</strong> · jugar → <strong>jugué</strong></div>
+        </div>
+        <div class="col-card sg">
+          <h4>-zar → -cé</h4>
+          <div class="meaning">z becomes c</div>
+          <div class="ex">empezar → <strong>empecé</strong></div>
+          <div class="ex">almorzar → <strong>almorcé</strong> · aterrizar → <strong>aterricé</strong></div>
+        </div>
+      </div>
+      <div class="ex-box">
+        <p><strong>The others stay regular:</strong> <em>pagaste, pagó, pagamos, pagaron</em> · <em>buscó</em> · <em>empezaron</em>.</p>
+        <p><strong>Reflexive verbs</strong> keep their pronoun: <em><strong>Me</strong> alojé en un hostal.</em> · <em><strong>Nos</strong> levantamos temprano.</em> · <em>¿<strong>Te</strong> alojaste en un hotel?</em></p>
+      </div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · en la tienda</div><p>Two forms you will use all the time when shopping: <strong>compré</strong> (I bought) and <strong>pagué</strong> (I paid). <em>Compré una bufanda y pagué ochenta quetzales.</em> Not <em>pagé</em>.</p></div>
+    </div>
+
+    <!-- G4 time expressions -->
+    <div class="gbox">
+      <h3><span class="num">G4</span>Expresiones de tiempo · ¿Cuándo pasó?</h3>
+      <p class="sub">These expressions tell you to use the preterite. They can go at the beginning or the end of the sentence.</p>
+      <div class="timeline" aria-label="Timeline from past to present">
+        <div>el año pasado<small>last year</small></div>
+        <div>el mes pasado<small>last month</small></div>
+        <div>la semana pasada<small>last week</small></div>
+        <div>anteayer<small>day before yesterday</small></div>
+        <div>ayer<small>yesterday</small></div>
+        <div>anoche<small>last night</small></div>
+        <div class="now">hoy<small>today</small></div>
+      </div>
+      <div class="rule-list">
+        <div class="rule"><h4>pasado / pasada agrees with the noun</h4><p><span class="ok">el</span> lunes / mes / año / verano <span class="ok">pasado</span> · <span class="ok">la</span> semana <span class="ok">pasada</span></p></div>
+        <div class="rule"><h4>hace + time = "ago"</h4><p>Viajé a Perú <span class="ok">hace dos años</span>. · <span class="ok">Hace tres días</span> compré la maleta.</p><p><em>Not:</em> <span class="no">Viajé a Perú dos años hace.</span></p></div>
+        <div class="rule"><h4>Ask with ¿cuándo? or ¿hace cuánto?</h4><p>¿Cuándo llegaste? · <span class="ok">Llegué anoche.</span> · ¿Hace cuánto tiempo viajaste? · <span class="ok">Hace un mes.</span></p></div>
+      </div>
+    </div>
+
+    <!-- G5 cause and consequence -->
+    <div class="gbox alt">
+      <h3><span class="num">G5</span>Conectores · causa y consecuencia</h3>
+      <p class="sub">Connect two ideas to tell a better story. <strong>Cause</strong> answers <em>why?</em> · <strong>Consequence</strong> answers <em>so what happened?</em></p>
+      <table class="conj-table">
+        <thead><tr><th>Conector</th><th>Tipo</th><th>Dónde va</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">porque</td><td>causa · because</td><td>in the middle, before the cause</td><td>Me alojé en un hostal <strong>porque</strong> es barato.</td></tr>
+          <tr><td class="accent">como</td><td>causa · since</td><td>at the <em>beginning</em> of the sentence</td><td><strong>Como</strong> el hotel es caro, me alojé en un hostal.</td></tr>
+          <tr><td class="accent">por eso</td><td>consecuencia · that's why, therefore</td><td>after the cause</td><td>El hotel es caro. <strong>Por eso</strong> me alojé en un hostal.</td></tr>
+          <tr><td class="accent">así que</td><td>consecuencia · so</td><td>after the cause, usually after a comma</td><td>El hotel es caro, <strong>así que</strong> me alojé en un hostal.</td></tr>
+        </tbody>
+      </table>
+      <div class="formula">
+        <span><small>causa</small>Perdí el vuelo</span><i>→</i>
+        <span class="hl"><small>consecuencia</small>por eso / así que</span><i>→</i>
+        <span><small>resultado</small>llegué tarde</span>
+      </div>
+      <div class="ojo"><div class="ojo-title">¡OJO! · como at the start, porque in the middle</div><p>To start a sentence with the cause, use <strong>como</strong>: <em>Como no tengo dinero, no compré nada.</em> In the middle, use <strong>porque</strong>: <em>No compré nada porque no tengo dinero.</em> And remember: <em>como</em> also means "like" and "I eat," so read the whole sentence.</p></div>
+    </div>
+  </section>
+
+  <!-- ═══ EJERCICIOS ═══ -->
+  <section class="sec" id="sec-ej">
+    <h2 class="sec-title">Ejercicios · Práctica</h2>
+    <p class="sec-sub">Ejercicio 1 · 2 · 3 · 4 · 5 · 6 · 7 · 8</p>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 1 · El pretérito de -AR <span class="pill">-É · -ASTE · -Ó · -AMOS · -ARON</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write the preterite form of the verb in parentheses. Use accents: <em>viajé</em>, <em>viajó</em>.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Ayer yo <input class="blk" id="e1_1" data-answer="viajé" placeholder="___"> a Seattle en tren. <span class="ex-hint">(viajar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">¿Tú <input class="blk" id="e1_2" data-answer="compraste" placeholder="___"> los boletos? <span class="ex-hint">(comprar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">El avión <input class="blk" id="e1_3" data-answer="aterrizó" placeholder="___"> a las seis. <span class="ex-hint">(aterrizar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Nosotros <input class="blk" id="e1_4" data-answer="reservamos" placeholder="___"> un hotel en el centro. <span class="ex-hint">(reservar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Mis padres <input class="blk" id="e1_5" data-answer="visitaron" placeholder="___"> el museo. <span class="ex-hint">(visitar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Mi hermana <input class="blk" id="e1_6" data-answer="facturó" placeholder="___"> dos maletas. <span class="ex-hint">(facturar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">Ustedes <input class="blk" id="e1_7" data-answer="hablaron" placeholder="___"> con el recepcionista. <span class="ex-hint">(hablar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">Anoche yo <input class="blk" id="e1_8" data-answer="cené" placeholder="___"> en un restaurante cubano. <span class="ex-hint">(cenar)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Reset</button>
+      <div class="res-msg" id="rs1" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 2 · El pretérito de -ER e -IR <span class="pill">-Í · -ISTE · -IÓ · -IMOS · -IERON</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write the preterite form of the verb in parentheses.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Ayer yo <input class="blk" id="e2_1" data-answer="comí" placeholder="___"> tacos en el mercado. <span class="ex-hint">(comer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">¿Tú <input class="blk" id="e2_2" data-answer="escribiste" placeholder="___"> una postal a tu familia? <span class="ex-hint">(escribir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">El vuelo <input class="blk" id="e2_3" data-answer="salió" placeholder="___"> a las ocho. <span class="ex-hint">(salir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">El año pasado nosotros <input class="blk" id="e2_4" data-answer="vivimos" placeholder="___"> en Madrid. <span class="ex-hint">(vivir)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Los turistas <input class="blk" id="e2_5" data-answer="recorrieron" placeholder="___"> la ciudad a pie. <span class="ex-hint">(recorrer)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Mi amiga <input class="blk" id="e2_6" data-answer="perdió" placeholder="___"> el pasaporte. <span class="ex-hint">(perder)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">Yo <input class="blk" id="e2_7" data-answer="aprendí" placeholder="___"> mucho en el viaje. <span class="ex-hint">(aprender)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">Ustedes <input class="blk" id="e2_8" data-answer="bebieron" placeholder="___"> café en Colombia. <span class="ex-hint">(beber)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6,e2_7,e2_8','rs2')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6,e2_7,e2_8','rs2')">Reset</button>
+      <div class="res-msg" id="rs2" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 3 · Yo pagué, yo busqué <span class="pill">-CAR · -GAR · -ZAR · REFLEXIVOS</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Watch the spelling of the <em>yo</em> form, and the pronoun of reflexive verbs.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">En el mercado, yo <input class="blk" id="e3_1" data-answer="pagué" placeholder="___"> en efectivo. <span class="ex-hint">(pagar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Yo <input class="blk" id="e3_2" data-answer="llegué" placeholder="___"> al aeropuerto a las cinco. <span class="ex-hint">(llegar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Yo <input class="blk" id="e3_3" data-answer="saqué" placeholder="___"> muchas fotos en Cusco. <span class="ex-hint">(sacar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Yo <input class="blk" id="e3_4" data-answer="empecé" placeholder="___"> a estudiar español el año pasado. <span class="ex-hint">(empezar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Yo <input class="blk" id="e3_5" data-answer="busqué" placeholder="___"> un hostal barato en internet. <span class="ex-hint">(buscar)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Nosotros nos <input class="blk" id="e3_6" data-answer="alojamos" placeholder="___"> en un albergue juvenil. <span class="ex-hint">(alojarse)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e3_1,e3_2,e3_3,e3_4,e3_5,e3_6','rs3')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e3_1,e3_2,e3_3,e3_4,e3_5,e3_6','rs3')">Reset</button>
+      <div class="res-msg" id="rs3" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 4 · ¿Cuándo? <span class="pill">EXPRESIONES DE TIEMPO</span></div>
+      <div class="word-bank"><span class="word-bank-label">Word Bank · use each word once</span><span class="word-bank-words"><span>anoche</span><span>ayer</span><span>anteayer</span><span>pasada</span><span>pasado</span><span>hace</span></span></div>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text"><input class="blk" id="e4_1" data-answer="anoche" placeholder="___"> cené a las nueve y me acosté a las once. <span class="ex-hint">(last night)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text"><input class="blk" id="e4_2" data-answer="ayer" placeholder="___"> compré el boleto y hoy salgo de viaje. <span class="ex-hint">(yesterday)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Hoy es miércoles. <input class="blk" id="e4_3" data-answer="anteayer" placeholder="___"> (el lunes) reservé el hotel.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Visité a mis abuelos la semana <input class="blk" id="e4_4" data-answer="pasada" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">El verano <input class="blk" id="e4_5" data-answer="pasado" placeholder="___"> viajamos a Chile.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Llegué a Olympia <input class="blk" id="e4_6" data-answer="hace" placeholder="___"> tres años. <span class="ex-hint">(three years ago)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e4_1,e4_2,e4_3,e4_4,e4_5,e4_6','rs4')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e4_1,e4_2,e4_3,e4_4,e4_5,e4_6','rs4')">Reset</button>
+      <div class="res-msg" id="rs4" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 5 · ¿Por qué? ¿Y qué pasó? <span class="pill">CONECTORES</span></div>
+      <div class="word-bank"><span class="word-bank-label">Word Bank · use each one twice</span><span class="word-bank-words"><span>porque</span><span>como</span><span>por eso</span><span>así que</span></span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin:-4px 0 14px;">Is it a cause (<em>porque, como</em>) or a consequence (<em>por eso, así que</em>)? Where a consequence fits, either one is correct.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Viajé a Costa Rica <input class="blk" id="e5_1" data-answer="porque" placeholder="___"> me encanta la naturaleza.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text"><input class="blk" id="e5_2" data-answer="como" placeholder="___"> no hablo francés, tomé una clase antes del viaje.</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">Perdí el pasaporte, <input class="blk" id="e5_3" data-answer="por eso|así que" placeholder="___"> llamé a la embajada.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Me alojé en un albergue <input class="blk" id="e5_4" data-answer="porque" placeholder="___"> es barato.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Gasté mucho en Madrid, <input class="blk" id="e5_5" data-answer="así que|por eso" placeholder="___"> ahora tengo que ahorrar.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text"><input class="blk" id="e5_6" data-answer="como" placeholder="___"> el hotel no tiene restaurante, cenamos en el mercado.</span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">Llovió todo el día, <input class="blk" id="e5_7" data-answer="por eso|así que" placeholder="___"> visitamos un museo.</span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">El vuelo salió tarde, <input class="blk" id="e5_8" data-answer="así que|por eso" placeholder="___"> perdimos la escala en Bogotá.</span></div>
+      <button class="chk-btn" onclick="checkBlanks('e5_1,e5_2,e5_3,e5_4,e5_5,e5_6,e5_7,e5_8','rs5')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e5_1,e5_2,e5_3,e5_4,e5_5,e5_6,e5_7,e5_8','rs5')">Reset</button>
+      <div class="res-msg" id="rs5" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 6 · ¿Cuál es correcta? <span class="pill">ERRORES COMUNES</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Choose the only correct sentence. You'll see the explanation right away.</p>
+      <div id="placeCont"></div>
+      <div class="res-msg" id="rs6" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 7 · Lectura · Mi viaje a Oaxaca <span class="pill">READING</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Read the text, then answer the questions. Tap the button to hear it.</p>
+      <div class="reading" id="readingText">
+        <p>Me llamo Marcos y vivo en Olympia. El verano pasado viajé a Oaxaca, en el sur de México, con mi amigo Tomás. Como los boletos directos son muy caros, compramos un vuelo con escala en Los Ángeles. En el aeropuerto yo facturé mi maleta, pero Tomás solo llevó equipaje de mano.</p>
+        <p>Llegamos a Oaxaca por la noche. Nos alojamos en un hostal en el centro, porque es barato y está cerca de todo. Pagamos cuatrocientos pesos por noche por una habitación doble. Al día siguiente recorrimos la ciudad a pie y visitamos el templo de Santo Domingo.</p>
+        <p>El sábado visitamos el mercado Benito Juárez. Yo compré un regalo para mi mamá: un rebozo azul. Pagué en efectivo, así que no usé mi tarjeta. Tomás regateó con el vendedor, por eso pagó menos por su sombrero. También comimos tlayudas en un puesto. ¡Gastamos poco y aprendimos mucho!</p>
+        <p class="gl">boletos directos = direct tickets · a pie = on foot · al día siguiente = the next day · el rebozo = traditional shawl · las tlayudas = large crispy tortillas with toppings, typical of Oaxaca · el sombrero = hat</p>
+      </div>
+      <button class="toggle-btn" style="margin:0 0 14px 0;" onclick="speakReading()">Escuchar la lectura</button>
+      <button class="rst-btn" style="margin-top:0;" onclick="stopSpeak()">Stop</button>
+      <div id="readCont"></div>
+      <div class="res-msg" id="rsRead" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 8 · Respuesta corta · Sobre ti <span class="pill">SE CORRIGE SOLA</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Answer each question about yourself in a full Spanish sentence, in the past. The page checks that you used the right structure.</p>
+      <div id="shortCont"></div>
+      <button class="chk-btn" onclick="checkShort()">Check My Answers</button>
+      <button class="rst-btn" onclick="resetShort()">Reset</button>
+      <div class="res-msg" id="rs8" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═══ TAREA ═══ -->
+  <section class="sec" id="sec-ta">
+    <h2 class="sec-title">Tarea · Comprar en un mercado</h2>
+    <p class="sec-sub">en la tienda · el pretérito · compré, pagué · expresiones de tiempo · conectores</p>
+
+    <div class="ch-intro">
+      <div class="label">Tarea de la semana · Writing task</div>
+      <h2>Tell the story of something you bought at a market</h2>
+      <p>Think of a time you bought something at a market, a fair or a small shop: on a trip, in Olympia, at the farmers market, at a <em>tianguis</em> or a craft fair. It can be real or imagined. Write a short story in the <strong>preterite</strong>: when you went, what you saw, what you bought, <strong>how much you paid and how</strong>, and one cause and one consequence. Use <strong>compré</strong> and <strong>pagué</strong>.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Paso a paso <span class="pill">3 PARTES</span></div>
+      <div class="steps">
+        <div class="step"><b>1 · ¿Cuándo y dónde?</b>El verano pasado… / Hace dos años… visité el mercado de…</div>
+        <div class="step"><b>2 · ¿Qué pasó?</b>Miré, compré, pagué, regateé, comí… with a price and a currency.</div>
+        <div class="step"><b>3 · ¿Por qué? ¿Y entonces?</b>Use porque or como, and por eso or así que.</div>
+      </div>
+      <div class="rec-card">
+        <span class="ml">Modelo · un mercado de Guatemala</span>
+        <h4>El mercado de Chichicastenango</h4>
+        <p><mark>El verano pasado</mark> <mark>viajé</mark> a Guatemala con mi hermana. <mark>Como</mark> nos encantan las artesanías, el domingo <mark>visitamos</mark> el mercado de Chichicastenango. <mark>Llegamos</mark> temprano, <mark>así que</mark> <mark>encontramos</mark> muchos puestos con textiles de colores. Primero, <mark>miré</mark> los precios de las bufandas. La vendedora me <mark>habló</mark> en español y en k'iche'. Luego <mark>compré</mark> una bufanda roja y <mark>pagué</mark> <mark>ochenta quetzales</mark> en efectivo. Mi hermana <mark>regateó</mark> un poco, <mark>por eso</mark> <mark>pagó</mark> menos por su bolsa. Después <mark>comimos</mark> tortillas con frijoles en un puesto <mark>porque</mark> son deliciosas y baratas. ¡<mark>Gastamos</mark> poco y lo <mark>pasamos</mark> muy bien!</p>
+      </div>
+      <div class="word-bank"><span class="word-bank-label">Verbos útiles en el mercado</span><span class="word-bank-words"><span>mirar</span><span>buscar → busqué</span><span>comprar</span><span>pagar → pagué</span><span>regatear</span><span>gastar</span><span>ahorrar</span><span>preguntar</span><span>probar</span><span>comer</span><span>decidir</span><span>recibir</span></span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Tu historia <span class="pill">8 ORACIONES O MÁS</span></div>
+      <label class="rec-label" for="recTitle" style="margin-top:0;">¿Dónde? · Nombre del mercado o la tienda</label>
+      <input class="rec-input" id="recTitle" type="text" placeholder="El mercado de Olympia, el mercado Benito Juárez en Oaxaca, una tienda en Madrid…" autocomplete="off">
+      <label class="rec-label" for="recIng">Mis compras · one per line, with the price</label>
+      <textarea class="task-area short" id="recIng" placeholder="una bufanda · 80 quetzales&#10;un café · 3 dólares&#10;…" spellcheck="false"></textarea>
+      <label class="rec-label" for="taskText">Tu historia</label>
+      <textarea class="task-area" id="taskText" placeholder="El sábado pasado visité…" spellcheck="false"></textarea>
+      <div class="wc" id="taskWc">0 compras · 0 oraciones · 0 palabras</div>
+      <ul class="checklist" id="taskChecklist"></ul>
+      <button class="chk-btn" onclick="checkTask()">Check My Story</button>
+      <button class="rst-btn" onclick="resetTask()">Reset</button>
+      <div class="res-msg" id="rsTask" aria-live="polite"></div>
+      <p style="font-size:0.78rem;color:var(--text-hint);font-style:italic;margin-top:10px;">This page does not save automatically. Download your report when you finish: your story is included in it.</p>
+    </div>
+  </section>
+
+  <!-- ═══ VIDEO LOG 2 ═══ -->
+  <section class="sec" id="sec-vl">
+    <h2 class="sec-title">Video Log 2 · Diario de viaje</h2>
+    <p class="sec-sub">Travel journal · draft, check, practice, record</p>
+
+    <div class="ch-intro">
+      <div class="label">Video Log 2 · Travel Journal</div>
+      <h2>Graba un diario de viaje en video</h2>
+      <p>Record a <strong>2 to 3 minute</strong> video (120 to 180 seconds) in Spanish about a past trip or a cultural journey through a Spanish-speaking country. The trip can be <strong>real or imagined</strong>. Use this tab to <strong>draft</strong> each part of your script, <strong>check</strong> the grammar requirements as you write, and <strong>practice</strong> with a timer before you record.</p>
+      <span class="vl-due" id="vlDue">Due: May 3 at 11:59 p.m.</span>
+      <div class="fact-pills" style="margin-top:14px;">
+        <span style="background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;">1 · Escribe</span>
+        <span style="background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;">2 · Revisa</span>
+        <span style="background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;">3 · Practica</span>
+        <span style="background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;">4 · Graba</span>
+      </div>
+    </div>
+
+    <div class="card vl-sticky" id="vlSummary">
+      <div class="card-title">Checklist <span class="pill" id="vlPill">0 / 8</span></div>
+      <div class="vl-meter">
+        <div class="vl-meter-top"><span id="vlWords">0 palabras</span><span id="vlTime">≈ 0:00 min</span></div>
+        <div class="vl-bar"><div class="vl-zone"></div><div class="vl-fill" id="vlFill"></div></div>
+        <div class="vl-scale"><span>0</span><span>1 min</span><span>2 min</span><span>3 min</span><span>4 min</span></div>
+      </div>
+      <ul class="checklist" id="vlChecklist"></ul>
+      <p class="vl-note">Speaking time is an estimate based on about 100 words per minute. Time yourself in <em>Modo práctica</em> for the real number.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Caja de herramientas · New structures for this video <span class="pill">REFERENCIA</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);">The video asks for four structures that go beyond this week's regular preterite. Here is what you need.</p>
+      <div class="tool-grid">
+        <div class="tool">
+          <h4>Pretérito irregular · ir, ser, hacer</h4>
+          <table>
+            <tr><td></td><td><b>ir / ser</b></td><td><b>hacer</b></td></tr>
+            <tr><td>yo</td><td>fui</td><td>hice</td></tr>
+            <tr><td>tú</td><td>fuiste</td><td>hiciste</td></tr>
+            <tr><td>él / ella</td><td>fue</td><td>hizo</td></tr>
+            <tr><td>nosotros</td><td>fuimos</td><td>hicimos</td></tr>
+            <tr><td>ellos / Uds.</td><td>fueron</td><td>hicieron</td></tr>
+          </table>
+          <p><em>Ir</em> and <em>ser</em> share forms: <span class="ok">Fui a Lima</span> (I went) · <span class="ok">Fue increíble</span> (it was). No accents on these forms.</p>
+        </div>
+        <div class="tool t2">
+          <h4>El progresivo · estaba + -ando / -iendo</h4>
+          <p>Describe a moment that was <em>in progress</em> when something else happened:</p>
+          <p><span class="ok">Estaba recorriendo</span> el mercado <span class="ok">cuando</span> vi a un músico.</p>
+          <p>estaba · estabas · estaba · estábamos · estaban<br>caminar → caminando · comer → comiendo · subir → subiendo · leer → leyendo</p>
+        </div>
+        <div class="tool t3">
+          <h4>Cláusulas relativas · que, donde</h4>
+          <p>Add information about a person or place:</p>
+          <p>Conocí a una señora <span class="ok">que</span> vende textiles.</p>
+          <p>Visité un pueblo <span class="ok">donde</span> hacen cerámica.</p>
+          <p>El hostal <span class="ok">donde</span> me alojé es muy barato.</p>
+        </div>
+        <div class="tool t4">
+          <h4>Ir a + infinitivo · el futuro</h4>
+          <p>Say what you are going to do on your next trip:</p>
+          <p>voy · vas · va · vamos · van + <b>a</b> + infinitivo</p>
+          <p>En mi próximo viaje <span class="ok">voy a reservar</span> el hotel antes. <span class="ok">No voy a llevar</span> tanta ropa.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Guía de grabación · Recording guide <span class="pill">6 PARTES</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:6px;">Write each part in Spanish. Click a sentence starter to add it to your draft, then finish the sentence with your own information. Each part shows a check when it meets its requirement.</p>
+      <div id="vlParts"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Tu guion completo · Full script <span class="pill">PRACTICA</span></div>
+      <div class="vl-script" id="vlScript"><span class="blanktxt">Your script will appear here as you write each part.</span></div>
+      <div class="vl-errs" id="vlErrs"></div>
+      <div class="vl-actions">
+        <button class="chk-btn" onclick="openPractice()">Modo práctica · Practice mode</button>
+        <button class="toggle-btn" onclick="speakScript()">Escuchar mi guion</button>
+        <button class="rst-btn" onclick="stopSpeak()">Stop</button>
+      </div>
+      <div class="vl-actions">
+        <button class="rst-btn" style="margin-left:0;" onclick="saveDraft()">↓ Guardar borrador (.txt)</button>
+        <label class="rst-btn vl-open">↑ Abrir borrador<input type="file" accept=".txt,text/plain" onchange="openDraft(this)" hidden></label>
+        <button class="rst-btn" onclick="resetVL()">Borrar todo</button>
+      </div>
+      <p class="vl-note">This page does not save automatically. Use <strong>Guardar borrador</strong> before you close it, and <strong>Abrir borrador</strong> to keep working later. Your script is also included in the downloaded report.</p>
+      <div class="res-msg" id="rsVL" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Antes de grabar · Before you record <span class="pill">TIPS</span></div>
+      <div class="steps">
+        <div class="step"><b>No leas</b>Turn your script into short notes. Glance at them, then look at the camera.</div>
+        <div class="step"><b>Muestra tu viaje</b>Photos, a map or a souvenir on screen make your story easier to follow.</div>
+        <div class="step"><b>Practica dos veces</b>Use <em>Modo práctica</em> and aim for 2:00 to 3:00.</div>
+        <div class="step"><b>Habla a la cámara</b>Talk to your viewer: <em>¡Hola! Hoy les voy a contar sobre mi viaje a…</em></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="vl-modal" id="vlModal" role="dialog" aria-modal="true" aria-labelledby="vlModalTitle" hidden>
+    <div class="vl-modal-box">
+      <div class="vl-modal-head">
+        <span id="vlModalTitle">Modo práctica</span>
+        <div class="vl-timer" id="vlTimer">0:00</div>
+        <div>
+          <button class="chk-btn" id="vlTimerBtn" onclick="toggleTimer()">Start</button>
+          <button class="rst-btn" onclick="resetTimer()">Reset</button>
+          <button class="rst-btn" onclick="closePractice()">Close</button>
+        </div>
+      </div>
+      <div class="vl-zone-note" id="vlZoneNote">Goal: 2:00 to 3:00</div>
+      <div class="vl-prompter" id="vlPrompter"></div>
+    </div>
+  </div>
+
+  <!-- ═══ JUEGOS ═══ -->
+  <section class="sec" id="sec-ju">
+    <h2 class="sec-title">Juegos · Play &amp; review</h2>
+    <p class="sec-sub">travel matching · currencies · speed challenge · quiz</p>
+
+    <div class="card">
+      <div class="card-title">Juego 1 · Emparejamiento · En el aeropuerto <span class="pill">MATCHING</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Click a Spanish word, then its English meaning. Correct pairs turn green.</p>
+      <div id="matchCont"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildMatch('w')">Shuffle / Reset</button>
+      <div class="res-msg" id="rsMatch" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 2 · Emparejamiento · ¿Con qué pagaste? <span class="pill">MONEDAS</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">You traveled to each country. Click the country, then the currency you paid with.</p>
+      <div id="matchCont2"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildMatch('m')">Shuffle / Reset</button>
+      <div class="res-msg" id="rsMatch2" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 3 · Reto rápido · Completa la oración <span class="pill">12 ORACIONES</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Choose the word that completes each sentence. Accents count! Build your streak.</p>
+      <div class="game-wrap" id="gameWrap">
+        <div class="game-scorebar">
+          <div>Puntos<b id="gScore">0</b></div>
+          <div>Racha<b id="gStreak">0</b></div>
+          <div>Pregunta<b id="gNum">1/12</b></div>
+        </div>
+        <div class="game-prompt" id="gPrompt">…</div>
+        <div class="game-sub" id="gSub"></div>
+        <div class="game-opts" id="gOpts"></div>
+        <div class="game-feedback" id="gFb"></div>
+      </div>
+      <button class="rst-btn" style="margin-left:0;" onclick="startGame()">Restart Game</button>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 4 · Opción múltiple · Capítulo 6.1 <span class="pill">QUIZ</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Ten questions on this week's grammar and vocabulary. Pick the best answer, then score it.</p>
+      <div id="quizCont"></div>
+      <button class="chk-btn" onclick="checkQuiz()">Score My Quiz</button>
+      <button class="rst-btn" onclick="resetQuiz()">Reset</button>
+      <div class="res-msg" id="rsQuiz" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    SPSCC · Spanish 122 · Semana 4 · Capítulo 6.1 · Viajes
+  </div>
+
+</div>
+
+<script>
+/* ── Tabs ── */
+function switchTab(tab, el){
+  document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  document.querySelectorAll('.sec').forEach(function(s){ s.classList.remove('active'); });
+  if(el){ el.classList.add('active'); el.setAttribute('aria-selected','true'); }
+  var s = document.getElementById('sec-'+tab); if(s) s.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Helpers ── */
+function normalize(s){ if(!s) return ''; return s.toString().trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' '); }
+function wordsOf(str){ return normalize(str).replace(/[¿?¡!.,;:"()]/g,' ').split(/\s+/).filter(Boolean); }
+function val(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+function setMsg(id, ok, text){ var m=document.getElementById(id); if(!m) return; m.textContent=text; m.className='res-msg '+(ok?'ok':'ng'); }
+function showFb(id, ok, msg){ var fb=document.getElementById(id); if(!fb) return; fb.className='task-fb show '+(ok?'ok':'ng'); fb.textContent=(ok?'✓ ':'✗ ')+msg; }
+function clearFb(id){ var fb=document.getElementById(id); if(fb) fb.className='task-fb'; }
+
+/* ── Audio: browser Spanish voice (Web Speech API) ── */
+var SPK = '<svg class="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+var esVoice = null;
+function pickVoice(){
+  if(!('speechSynthesis' in window)) return;
+  var vs = window.speechSynthesis.getVoices(); if(!vs || !vs.length) return;
+  var prefs = ['es-MX','es-US','es-419','es-CO','es-ES'];
+  for(var p=0;p<prefs.length;p++){ for(var i=0;i<vs.length;i++){ if((vs[i].lang||'').replace('_','-')===prefs[p]){ esVoice=vs[i]; return; } } }
+  for(var j=0;j<vs.length;j++){ if((vs[j].lang||'').toLowerCase().indexOf('es')===0){ esVoice=vs[j]; return; } }
+}
+if('speechSynthesis' in window){ pickVoice(); window.speechSynthesis.onvoiceschanged = pickVoice; }
+function speak(parts){
+  try{
+    if(!('speechSynthesis' in window)) return;
+    var synth = window.speechSynthesis; synth.cancel();
+    parts.forEach(function(t){
+      var u = new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,''));
+      u.lang = esVoice ? esVoice.lang : 'es-MX'; if(esVoice) u.voice = esVoice; u.rate = 0.9;
+      synth.speak(u);
+    });
+  }catch(e){}
+}
+function stopSpeak(){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+function speakReading(){ var ps=[].slice.call(document.querySelectorAll('#readingText p:not(.gl)')).map(function(p){ return p.textContent; }); speak(ps); }
+
+/* ── Flashcards ── */
+var FC = {
+  trip: [
+    {es:'el viaje', note:'sustantivo', en:'trip', ex:'El viaje empezó en Lima.'},
+    {es:'el vuelo', note:'sustantivo', en:'flight', ex:'El vuelo salió a las ocho.'},
+    {es:'el aeropuerto', note:'sustantivo', en:'airport', ex:'Llegué al aeropuerto temprano.'},
+    {es:'el pasaporte', note:'sustantivo', en:'passport', ex:'Mi amiga perdió el pasaporte.'},
+    {es:'la maleta', note:'sustantivo', en:'suitcase', ex:'Facturé una maleta grande.'},
+    {es:'el equipaje de mano', note:'sustantivo', en:'carry-on bag', ex:'Solo llevé equipaje de mano.'},
+    {es:'el boleto', note:'el billete en España', en:'ticket', ex:'Compré el boleto en internet.'},
+    {es:'la tarjeta de embarque', note:'sustantivo', en:'boarding pass', ex:'Imprimí la tarjeta de embarque.'},
+    {es:'la puerta de embarque', note:'sustantivo', en:'boarding gate', ex:'Busqué la puerta de embarque.'},
+    {es:'la aduana', note:'sustantivo', en:'customs', ex:'Pasamos por la aduana sin problemas.'},
+    {es:'el destino', note:'sustantivo', en:'destination', ex:'Mi destino favorito es Cartagena.'},
+    {es:'de ida y vuelta', note:'expresión', en:'round-trip', ex:'Compré un boleto de ida y vuelta.'},
+    {es:'el / la turista', note:'sustantivo', en:'tourist', ex:'Muchos turistas visitaron el museo.'},
+    {es:'el recuerdo', note:'sustantivo', en:'souvenir', ex:'Compré un recuerdo para mi mamá.'}
+  ],
+  lodge: [
+    {es:'el hotel', note:'alojamiento', en:'hotel', ex:'El hotel tiene piscina.'},
+    {es:'el hostal', note:'alojamiento', en:'small, simple hotel; guesthouse', ex:'Nos alojamos en un hostal en el centro.'},
+    {es:'el albergue juvenil', note:'alojamiento', en:'youth hostel', ex:'En el albergue compartí la habitación.'},
+    {es:'la habitación individual', note:'para una persona', en:'single room', ex:'Reservé una habitación individual.'},
+    {es:'la habitación doble', note:'para dos personas', en:'double room', ex:'Pagamos una habitación doble.'},
+    {es:'la reserva', note:'la reservación en México', en:'reservation, booking', ex:'Confirmé la reserva por correo.'},
+    {es:'la recepción', note:'sustantivo', en:'front desk', ex:'Pregunté en la recepción.'},
+    {es:'la llave', note:'sustantivo', en:'key', ex:'Dejé la llave en la recepción.'}
+  ],
+  actions: [
+    {es:'viajar', note:'regular -ar', en:'to travel', ex:'Viajé a Chile el año pasado.'},
+    {es:'reservar', note:'regular -ar', en:'to book, to reserve', ex:'Reservamos el hotel en marzo.'},
+    {es:'facturar', note:'facturar la maleta', en:'to check (luggage)', ex:'Facturé la maleta en el aeropuerto.'},
+    {es:'hacer escala', note:'en + ciudad', en:'to have a layover', ex:'El vuelo hace escala en Bogotá.'},
+    {es:'despegar', note:'-gar · despegué', en:'to take off', ex:'El avión despegó a las nueve.'},
+    {es:'aterrizar', note:'-zar · aterricé', en:'to land', ex:'Aterrizamos en Lima por la noche.'},
+    {es:'alojarse', note:'reflexivo', en:'to stay (lodging)', ex:'Me alojé en un albergue.'},
+    {es:'recorrer', note:'regular -er', en:'to tour, to travel around', ex:'Recorrimos la ciudad a pie.'},
+    {es:'visitar', note:'regular -ar', en:'to visit', ex:'Visité el museo de arte.'},
+    {es:'sacar fotos', note:'-car · saqué', en:'to take pictures', ex:'Saqué muchas fotos en Cusco.'}
+  ],
+  time: [
+    {es:'ayer', note:'el pasado', en:'yesterday', ex:'Ayer compré la maleta.'},
+    {es:'anoche', note:'el pasado', en:'last night', ex:'Anoche llegué muy tarde.'},
+    {es:'anteayer', note:'el pasado', en:'the day before yesterday', ex:'Anteayer reservé el hotel.'},
+    {es:'la semana pasada', note:'pasada · femenino', en:'last week', ex:'La semana pasada visité a mi abuela.'},
+    {es:'el mes pasado', note:'pasado · masculino', en:'last month', ex:'El mes pasado viajamos a Seattle.'},
+    {es:'el año pasado', note:'pasado · masculino', en:'last year', ex:'El año pasado viví en Madrid.'},
+    {es:'el verano pasado', note:'pasado · masculino', en:'last summer', ex:'El verano pasado recorrí Perú.'},
+    {es:'hace + tiempo', note:'hace dos años', en:'… ago', ex:'Viajé a México hace dos años.'},
+    {es:'una vez', note:'expresión', en:'once, one time', ex:'Una vez perdí el vuelo.'}
+  ],
+  conn: [
+    {es:'porque', note:'causa · en medio', en:'because', ex:'Me alojé en un hostal porque es barato.'},
+    {es:'como', note:'causa · al principio', en:'since, as', ex:'Como no tengo dinero, no compré nada.'},
+    {es:'por eso', note:'consecuencia', en:'that\'s why, therefore', ex:'Llovió mucho. Por eso visitamos un museo.'},
+    {es:'así que', note:'consecuencia', en:'so', ex:'Llegué tarde, así que perdí el vuelo.'},
+    {es:'primero', note:'orden', en:'first', ex:'Primero, facturé la maleta.'},
+    {es:'después', note:'orden', en:'after that, afterward', ex:'Después, busqué la puerta de embarque.'}
+  ],
+  shop: [
+    {es:'el mercado', note:'sustantivo', en:'market', ex:'Visité el mercado el sábado.'},
+    {es:'el puesto', note:'en el mercado', en:'stall, stand', ex:'Compré frutas en un puesto.'},
+    {es:'la tienda', note:'sustantivo', en:'store, shop', ex:'Entré en una tienda de recuerdos.'},
+    {es:'el precio', note:'¿cuánto cuesta?', en:'price', ex:'Pregunté el precio de la bolsa.'},
+    {es:'barato / barata', note:'adjetivo', en:'cheap, inexpensive', ex:'El hostal es barato.'},
+    {es:'caro / cara', note:'adjetivo', en:'expensive', ex:'El hotel es muy caro.'},
+    {es:'regatear', note:'regular -ar', en:'to bargain', ex:'Regateé y pagué menos.'},
+    {es:'pagar en efectivo', note:'-gar · pagué', en:'to pay in cash', ex:'Pagué en efectivo.'},
+    {es:'pagar con tarjeta', note:'-gar · pagué', en:'to pay by card', ex:'Mi amigo pagó con tarjeta.'},
+    {es:'gastar', note:'regular -ar', en:'to spend (money)', ex:'Gastamos poco en el viaje.'},
+    {es:'ahorrar', note:'regular -ar', en:'to save (money)', ex:'Ahorré dinero para el viaje.'},
+    {es:'el presupuesto', note:'finanzas', en:'budget', ex:'Preparé un presupuesto para el viaje.'},
+    {es:'la moneda', note:'finanzas', en:'currency; coin', ex:'La moneda de Perú es el sol.'},
+    {es:'el cambio', note:'finanzas', en:'change; exchange', ex:'Recibí el cambio en monedas.'}
+  ]
+};
+var flipped = {};
+function buildFlash(key, containerId, extraClass){
+  var c = document.getElementById(containerId);
+  FC[key].forEach(function(v, i){
+    var card = document.createElement('div');
+    card.className = 'vocab-card' + (extraClass ? ' '+extraClass : '');
+    card.setAttribute('role','button'); card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label', v.es + '. Flip to see the translation and hear the pronunciation.');
+    card.innerHTML = '<div class="vocab-card-inner"><div class="vocab-front">'+v.es+'<small>'+v.note+'</small><span class="vocab-sound" aria-hidden="true">'+SPK+'</span></div>' +
+      '<div class="vocab-back">'+v.en+'<span class="vocab-ex">'+v.ex+'</span>' +
+      '<button type="button" class="vocab-replay" aria-label="Play again: '+v.es.replace(/"/g,'&quot;')+'">'+SPK+'</button></div></div>';
+    function flip(){
+      var now = card.classList.toggle('flipped');
+      if(now){ speak([v.es, v.ex]); flipped[key+i]=true; updateCompletion(); }
+    }
+    card.addEventListener('click', flip);
+    card.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); flip(); } });
+    card.querySelector('.vocab-replay').addEventListener('click', function(e){ e.stopPropagation(); speak([v.es, v.ex]); });
+    c.appendChild(card);
+  });
+}
+function flashTotal(){ var n=0; for(var k in FC) n+=FC[k].length; return n; }
+function flashDone(){ return Object.keys(flipped).length; }
+
+/* ── Fill-in blanks ── */
+/* data-answer may hold alternatives separated by | ; accents are forgiven but flagged */
+function answersOf(el){ return (el.getAttribute('data-answer')||'').split('|'); }
+function blankOk(el){ var v=normalize(el.value); return v!=='' && answersOf(el).some(function(a){ return normalize(a)===v; }); }
+function blankExact(el){ var v=(el.value||'').trim().toLowerCase().replace(/\s+/g,' '); return answersOf(el).some(function(a){ return a.toLowerCase()===v; }); }
+function checkBlanks(idsCSV, resultId){
+  var ids = idsCSV.split(','), correct = 0, total = ids.length, accents = [];
+  ids.forEach(function(id){
+    var el = document.getElementById(id); if(!el) return;
+    el.classList.remove('ok','ng');
+    if(blankOk(el)){ el.classList.add('ok'); correct++; if(!blankExact(el)) accents.push(answersOf(el)[0]); }
+    else el.classList.add('ng');
+  });
+  var msg = document.getElementById(resultId);
+  if(msg){
+    var acc = accents.length ? ' Ojo con los acentos: '+accents.join(', ')+'.' : '';
+    if(correct===total){ msg.textContent='¡Perfecto! '+correct+' / '+total+' correctas. ✓'+acc; msg.className='res-msg ok'; }
+    else { msg.textContent=correct+' / '+total+' correctas. Revisa las marcadas en rojo.'+acc; msg.className='res-msg ng'; }
+  }
+  updateCompletion();
+}
+function resetBlanks(idsCSV, resultId){
+  idsCSV.split(',').forEach(function(id){ var el=document.getElementById(id); if(el){ el.value=''; el.classList.remove('ok','ng'); } });
+  var msg=document.getElementById(resultId); if(msg){ msg.textContent=''; msg.className='res-msg'; }
+  updateCompletion();
+}
+
+/* ── Multiple-choice engine ── */
+var quizState = {}, MC_SETS = {}, MC_MSG = { place:'rs6', read:'rsRead' };
+function buildMC(data, key, containerId){
+  var container = document.getElementById(containerId); if(!container) return;
+  container.innerHTML='';
+  quizState[key] = data.map(function(){ return null; }); MC_SETS[key] = data;
+  data.forEach(function(item, i){
+    var div = document.createElement('div');
+    div.className = 'quiz-item'; div.id = key+'_item_'+i;
+    var head = '<div class="quiz-q"><span class="qnum">'+(i+1)+'.</span>'+item.q+'</div><div class="quiz-gloss">'+item.gloss+'</div>';
+    var opts = item.options.map(function(opt, j){
+      return '<button type="button" class="quiz-opt" id="'+key+'_'+i+'_'+j+'" onclick="pickMC(\''+key+'\','+i+','+j+')"><span class="letter">'+'ABCD'[j]+'</span><span>'+opt+'</span></button>';
+    }).join('');
+    div.innerHTML = head + '<div class="quiz-options">'+opts+'</div><div class="quiz-explain" id="'+key+'_exp_'+i+'"></div>';
+    container.appendChild(div);
+  });
+}
+function pickMC(key, i, j){
+  if(MC_SETS[key].instant && quizState[key][i]!==null) return;
+  quizState[key][i] = j;
+  MC_SETS[key][i].options.forEach(function(_, k){ document.getElementById(key+'_'+i+'_'+k).classList.toggle('selected', k===j); });
+  if(MC_SETS[key].instant){ revealMC(key, i); instantMsg(key); }
+  updateCompletion();
+}
+function revealMC(key, i){
+  var item = MC_SETS[key][i], chosen = quizState[key][i], ok = chosen===item.answer;
+  item.options.forEach(function(_, j){ var btn=document.getElementById(key+'_'+i+'_'+j); btn.classList.remove('is-correct','is-wrong'); if(j===item.answer) btn.classList.add('is-correct'); else if(j===chosen) btn.classList.add('is-wrong'); });
+  var exp = document.getElementById(key+'_exp_'+i); exp.className='quiz-explain show';
+  exp.innerHTML = '<strong>'+(ok?'✓ ¡Correcto!':'✗ No exactamente.')+'</strong> '+item.explain;
+  document.getElementById(key+'_item_'+i).className='quiz-item '+(ok?'correct':'wrong');
+  return ok;
+}
+function resetMC(key){
+  var data = MC_SETS[key]; quizState[key] = data.map(function(){ return null; });
+  data.forEach(function(item, i){ item.options.forEach(function(_, j){ document.getElementById(key+'_'+i+'_'+j).className='quiz-opt'; }); document.getElementById(key+'_exp_'+i).className='quiz-explain'; document.getElementById(key+'_item_'+i).className='quiz-item'; });
+}
+function mcCorrect(key){ var c=0; MC_SETS[key].forEach(function(it,i){ if(quizState[key][i]===it.answer) c++; }); return c; }
+function instantMsg(key){
+  var data=MC_SETS[key], answered = quizState[key].filter(function(x){return x!==null;}).length;
+  if(answered===data.length){ var c=mcCorrect(key); setMsg(MC_MSG[key], c===data.length, c+' / '+data.length+' correctas.'+(c===data.length?' ¡Perfecto! ✓':'')); }
+}
+
+/* Ejercicio 6 · common errors (instant feedback) */
+var placeData = [
+  { q:'"I traveled to Mexico."', gloss:'yo · -ar', options:['Yo viaje a México.','Yo viajé a México.','Yo viajo a México.','Yo viajó a México.'], answer:1, explain:'<em>Yo</em> + <em>-ar</em> → <strong>-é</strong> with an accent. <em>Viaje</em> is the noun "trip," <em>viajo</em> is the present, and <em>viajó</em> is él/ella.' },
+  { q:'"She ate at the market."', gloss:'ella · -er', options:['Ella comí en el mercado.','Ella comío en el mercado.','Ella comió en el mercado.','Ella comé en el mercado.'], answer:2, explain:'<em>-er</em> verbs, él/ella: <strong>-ió</strong>, with the accent on the <em>o</em>: <strong>comió</strong>.' },
+  { q:'"I paid in cash."', gloss:'-gar → -gué', options:['Pagué en efectivo.','Pagé en efectivo.','Pagó en efectivo.','Pague en efectivo.'], answer:0, explain:'<em>Pagar</em> adds a <em>u</em> in the yo form to keep the hard g sound: <strong>pagué</strong>.' },
+  { q:'"I visited Spain two years ago."', gloss:'hace + tiempo', options:['Visité España dos años hace.','Visité España antes dos años.','Visito España hace dos años.','Visité España hace dos años.'], answer:3, explain:'"Ago" = <strong>hace</strong> + time, and the action is in the preterite: <strong>Visité España hace dos años</strong>.' },
+  { q:'"Since the hotel is expensive, I stayed in a hostel."', gloss:'causa al principio', options:['Así que el hotel es caro, me alojé en un hostal.','Como el hotel es caro, me alojé en un hostal.','Por eso el hotel es caro, me alojé en un hostal.','El hotel es caro, como me alojé en un hostal.'], answer:1, explain:'To start with the cause, use <strong>como</strong>. <em>Así que</em> and <em>por eso</em> introduce the result, not the cause.' },
+  { q:'"They traveled last week."', gloss:'ellos · pasada', options:['Viajaron la semana pasado.','Viajó la semana pasada.','Viajaron la semana pasada.','Viajieron la semana pasada.'], answer:2, explain:'Ellos + <em>-ar</em> → <strong>-aron</strong>, and <em>semana</em> is feminine: <strong>la semana pasada</strong>.' }
+];
+placeData.instant = true;
+
+/* Ejercicio 7 · reading (instant feedback) */
+var readData = [
+  { q:'¿Por qué compraron un vuelo con escala?', gloss:'párrafo 1', options:['Porque les encanta Los Ángeles.','Porque los boletos directos son muy caros.','Porque no hay vuelos directos.','Porque Tomás perdió el pasaporte.'], answer:1, explain:'«<strong>Como los boletos directos son muy caros</strong>, compramos un vuelo con escala».' },
+  { q:'¿Quién facturó una maleta?', gloss:'párrafo 1', options:['Marcos.','Tomás.','Marcos y Tomás.','Nadie.'], answer:0, explain:'«<strong>Yo facturé</strong> mi maleta, pero Tomás solo llevó equipaje de mano».' },
+  { q:'¿Dónde se alojaron?', gloss:'párrafo 2', options:['En un hotel caro.','En un albergue juvenil.','En la casa de un amigo.','En un hostal en el centro.'], answer:3, explain:'«Nos alojamos en <strong>un hostal en el centro</strong>, porque es barato».' },
+  { q:'¿Qué compró Marcos para su mamá?', gloss:'párrafo 3', options:['Un sombrero.','Unas tlayudas.','Un rebozo azul.','Una maleta.'], answer:2, explain:'«Compré un regalo para mi mamá: <strong>un rebozo azul</strong>».' },
+  { q:'¿Por qué pagó menos Tomás por su sombrero?', gloss:'párrafo 3', options:['Porque regateó con el vendedor.','Porque pagó con tarjeta.','Porque el sombrero es pequeño.','Porque pagó en dólares.'], answer:0, explain:'«Tomás <strong>regateó</strong> con el vendedor, <strong>por eso</strong> pagó menos».' }
+];
+readData.instant = true;
+
+/* Juego 4 · quiz */
+var quizData = [
+  { q:'Ayer yo <u>___</u> el vuelo a Lima. <em>(reservar)</em>', gloss:'yo · -ar', options:['reservé','reservó','reserve','reservaste'], answer:0, explain:'yo → <strong>reservé</strong>, with the accent.' },
+  { q:'Mis amigos <u>___</u> en un hostal.', gloss:'alojarse · ellos', options:['se alojó','nos alojamos','se alojaron','se alojieron'], answer:2, explain:'ellos → <strong>se alojaron</strong>: pronoun <em>se</em> + <em>-aron</em>.' },
+  { q:'¿Tú <u>___</u> el pasaporte? <em>(perder)</em>', gloss:'tú · -er', options:['perdiste','perdistes','perdió','perdí'], answer:0, explain:'tú → <strong>-iste</strong>, with no final <em>s</em>: <strong>perdiste</strong>.' },
+  { q:'<em>Facturar la maleta</em> means…', gloss:'vocabulario', options:['to pack the suitcase','to lose the suitcase','to check the suitcase','to pay for the suitcase'], answer:2, explain:'<strong>Facturar</strong> = to check (luggage) at the airport.' },
+  { q:'<em>El vuelo hace escala en Panamá</em> means…', gloss:'vocabulario', options:['The flight leaves from Panama.','The flight has a layover in Panama.','The flight is canceled in Panama.','The flight lands late in Panama.'], answer:1, explain:'<strong>Hacer escala</strong> = to have a layover.' },
+  { q:'"We lived in Spain two years ago."', gloss:'hace + tiempo', options:['Vivimos en España dos años hace.','Vivemos en España hace dos años.','Vivimos en España por dos años.','Vivimos en España hace dos años.'], answer:3, explain:'<strong>hace dos años</strong> = two years ago.' },
+  { q:'Perdí el tren, <u>___</u> llegué tarde.', gloss:'consecuencia', options:['porque','como','así que','pero'], answer:2, explain:'Losing the train is the cause; arriving late is the result: <strong>así que</strong> (or <em>por eso</em>).' },
+  { q:'<u>___</u> me gusta la playa, viajé a Cancún.', gloss:'causa al principio', options:['Como','Porque','Por eso','Así que'], answer:0, explain:'At the start of the sentence, the cause uses <strong>como</strong>.' },
+  { q:'An <em>albergue juvenil</em> is…', gloss:'el alojamiento', options:['a luxury hotel','a cheap youth hostel with shared rooms','a train station','a stall at the market'], answer:1, explain:'<strong>Un albergue juvenil</strong> is a youth hostel, often with shared rooms.' },
+  { q:'In Guatemala you pay with…', gloss:'nota cultural', options:['el peso','el sol','el colón','el quetzal'], answer:3, explain:'The currency of Guatemala is <strong>el quetzal</strong>, named after the national bird.' }
+];
+function checkQuiz(){
+  var correct = 0; quizData.forEach(function(_, i){ if(revealMC('quiz', i)) correct++; });
+  setMsg('rsQuiz', correct===quizData.length, correct+' / '+quizData.length+' correctas.'+(correct===quizData.length?' ¡Perfecto! ✓':' Lee cada explicación.'));
+  updateCompletion();
+}
+function resetQuiz(){ resetMC('quiz'); document.getElementById('rsQuiz').className='res-msg'; document.getElementById('rsQuiz').textContent=''; updateCompletion(); }
+
+/* ── Matching games ── */
+var MATCH = {
+  w: { cont:'matchCont', msg:'rsMatch', labels:['Español','English'], done:'¡Excelente! Emparejaste las ', noun:' palabras. ✓', matched:0, finished:false, selA:null, selB:null, data:[
+    {a:'el vuelo', b:'flight'},
+    {a:'la maleta', b:'suitcase'},
+    {a:'el pasaporte', b:'passport'},
+    {a:'la tarjeta de embarque', b:'boarding pass'},
+    {a:'el equipaje de mano', b:'carry-on bag'},
+    {a:'la aduana', b:'customs'},
+    {a:'facturar', b:'to check (luggage)'},
+    {a:'hacer escala', b:'to have a layover'},
+    {a:'aterrizar', b:'to land'},
+    {a:'alojarse', b:'to stay (lodging)'}
+  ]},
+  m: { cont:'matchCont2', msg:'rsMatch2', labels:['País','Moneda'], done:'¡Excelente! Emparejaste los ', noun:' países. ✓', matched:0, finished:false, selA:null, selB:null, data:[
+    {a:'México', b:'el peso mexicano'},
+    {a:'Guatemala', b:'el quetzal'},
+    {a:'Costa Rica', b:'el colón'},
+    {a:'Perú', b:'el sol'},
+    {a:'España', b:'el euro'},
+    {a:'Ecuador', b:'el dólar estadounidense'},
+    {a:'Venezuela', b:'el bolívar'},
+    {a:'Bolivia', b:'el boliviano'},
+    {a:'Paraguay', b:'el guaraní'},
+    {a:'Honduras', b:'el lempira'}
+  ]}
+};
+function buildMatch(key){
+  var M = MATCH[key], c = document.getElementById(M.cont);
+  var order = M.data.map(function(_, i){ return i; });
+  for(var k=order.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=order[k]; order[k]=order[r]; order[r]=t; }
+  var aHtml = M.data.map(function(m, i){ return '<div class="mi" role="button" tabindex="0" data-side="a" data-idx="'+i+'" onclick="selMatch(\''+key+'\',this)">'+(i+1)+'. '+m.a+'</div>'; }).join('');
+  var bHtml = order.map(function(idx){ return '<div class="mi" role="button" tabindex="0" data-side="b" data-idx="'+idx+'" onclick="selMatch(\''+key+'\',this)">'+M.data[idx].b+'</div>'; }).join('');
+  c.innerHTML = '<div class="match-cols"><div><div class="match-col-label">'+M.labels[0]+'</div>'+aHtml+'</div><div><div class="match-col-label">'+M.labels[1]+'</div>'+bHtml+'</div></div>';
+  M.selA=null; M.selB=null; M.matched=0; M.finished=false;
+  document.getElementById(M.msg).textContent=''; document.getElementById(M.msg).className='res-msg';
+  updateCompletion();
+}
+function selMatch(key, el){
+  var M = MATCH[key]; if(el.classList.contains('done')) return;
+  var side = el.dataset.side;
+  document.querySelectorAll('#'+M.cont+' .mi[data-side='+side+']').forEach(function(i){ i.classList.remove('sel','bad'); });
+  el.classList.add('sel'); if(side==='a') M.selA=el; else M.selB=el;
+  if(!M.selA || !M.selB) return;
+  if(M.selA.dataset.idx === M.selB.dataset.idx){
+    M.selA.classList.remove('sel'); M.selA.classList.add('done'); M.selB.classList.remove('sel'); M.selB.classList.add('done'); M.matched++;
+    if(M.matched===M.data.length){ M.finished=true; setMsg(M.msg, true, M.done+M.matched+M.noun); }
+  } else { var bad=M.selB; bad.classList.add('bad'); setTimeout(function(){ bad.classList.remove('bad','sel'); }, 700); }
+  M.selA=null; M.selB=null; updateCompletion();
+}
+document.addEventListener('keydown', function(e){ if((e.key==='Enter'||e.key===' ') && e.target && e.target.classList && e.target.classList.contains('mi')){ e.preventDefault(); e.target.click(); } });
+
+/* ── Short answer ── */
+/* keys: every group must be satisfied; a group is satisfied by any one of its alternatives (a word or a phrase) */
+var shortData = [
+  { q:'¿Adónde viajaste el año pasado?', gloss:'Where did you travel last year?', keys:[['viaje','visite','recorri','no viaje']], minW:3, hint:'Usa «Viajé a…» o «Visité…».' },
+  { q:'¿Qué compraste la semana pasada?', gloss:'What did you buy last week?', keys:[['compre','no compre']], minW:3, hint:'Usa «Compré…».' },
+  { q:'¿Qué comiste anoche?', gloss:'What did you eat last night?', keys:[['comi','cene','no comi']], minW:3, hint:'Usa «Comí…» o «Cené…».' },
+  { q:'¿Dónde te alojaste en tu último viaje?', gloss:'Where did you stay on your last trip?', keys:[['me aloje','nos alojamos']], minW:4, hint:'Usa «Me alojé en…».' },
+  { q:'¿Por qué te gusta (o no te gusta) viajar?', gloss:'Why do you like (or not like) to travel?', keys:[['porque','como']], minW:5, hint:'Usa «porque…» o empieza con «Como…».' },
+  { q:'Escribe una oración sobre ayer con «por eso» o «así que».', gloss:'One sentence about yesterday, with a consequence.', keys:[['ayer'],['por eso','asi que']], minW:6, hint:'Usa «ayer» y «por eso» o «así que».' }
+];
+function buildShort(){
+  var c = document.getElementById('shortCont');
+  c.innerHTML = shortData.map(function(s, i){
+    return '<div style="margin-bottom:14px;"><label for="sa'+i+'" style="display:block;font-size:0.92rem;font-weight:700;color:var(--navy);">'+(i+1)+'. '+s.q+' <span style="font-weight:400;color:var(--text-hint);font-style:italic;font-size:0.82rem;">'+s.gloss+'</span></label><input class="task-input" id="sa'+i+'" placeholder="Escribe tu respuesta…" autocomplete="off"><div class="task-fb" id="fbsa'+i+'"></div></div>';
+  }).join('');
+}
+function gradeShort(i){
+  var s = shortData[i], v = val('sa'+i), w = wordsOf(v), n = ' '+w.join(' ')+' ';
+  if(!v) return { ok:false, msg:'Escribe tu respuesta.' };
+  if(w.length < s.minW) return { ok:false, msg:'Escribe una oración completa (mínimo '+s.minW+' palabras).' };
+  for(var k=0;k<s.keys.length;k++){ var hit = s.keys[k].some(function(alt){ return n.indexOf(' '+alt+' ')!==-1; }); if(!hit) return { ok:false, msg:s.hint }; }
+  if(/pagé|llegé|empezé|buscé|sacé/i.test(v)) return { ok:false, msg:'Revisa la ortografía: pagué, llegué, empecé.' };
+  return { ok:true, msg:'¡Bien! Respuesta completa.' };
+}
+function checkShort(){
+  var correct = 0;
+  shortData.forEach(function(_, i){ var r=gradeShort(i); document.getElementById('sa'+i).style.borderBottomColor = r.ok?'var(--sage)':'var(--terracotta)'; showFb('fbsa'+i, r.ok, r.msg); if(r.ok) correct++; });
+  setMsg('rs8', correct===shortData.length, correct+' / '+shortData.length+' respuestas válidas.');
+  updateCompletion();
+}
+function resetShort(){
+  shortData.forEach(function(_, i){ var el=document.getElementById('sa'+i); el.value=''; el.style.borderBottomColor=''; clearFb('fbsa'+i); });
+  document.getElementById('rs8').className='res-msg'; document.getElementById('rs8').textContent=''; updateCompletion();
+}
+
+/* ── Tarea · Comprar en un mercado (live checklist) ── */
+var NOT_PRET = ('cafe aqui alli ahi asi si mi bebe menu mani aji esqui colibri jabali rubi papa mama sofa ademas tambien despues quizas segun cafes jose').split(' ');
+var CURRENCY = ['peso','pesos','quetzal','quetzales','dolar','dolares','colon','colones','sol','soles','euro','euros','boliviano','bolivianos','balboa','balboas','lempira','lempiras','guarani','guaranies','bolivar','bolivares','cordoba','cordobas'];
+var TIME_EXPR = ['ayer','anoche','anteayer','pasado','pasada','una vez'];
+function pretTokens(raw){
+  var toks = (raw||'').toLowerCase().replace(/[¿?¡!.,;:"()«»]/g,' ').split(/\s+/).filter(Boolean), set={};
+  toks.forEach(function(t){
+    var plain = t.normalize('NFD').replace(/[̀-ͯ]/g,'');
+    if(NOT_PRET.indexOf(plain)!==-1) return;
+    if(/[a-zñ]{2,}(é|í|ó)$/.test(t) || /[a-zñ]{2,}(aste|iste|aron|ieron|imos)$/.test(t)) set[t]=true;
+  });
+  return Object.keys(set);
+}
+function taskAnalysis(){
+  var title = val('recTitle'), ingRaw = val('recIng'), raw = val('taskText'), n = ' '+normalize(raw).replace(/[¿?¡!.,;:"()«»]/g,' ').replace(/\s+/g,' ')+' ', w = wordsOf(raw);
+  var ings = ingRaw.split(/[\n;]+/).map(function(x){ return x.trim(); }).filter(function(x){ return x.length>1; });
+  var sentences = raw.split(/[.!?\n]+/).filter(function(s){ return s.trim().split(/\s+/).filter(Boolean).length>=3; }).length;
+  var pret = pretTokens(raw);
+  var compre = / compre /.test(n), pague = / pague /.test(n);
+  var price = CURRENCY.some(function(c){ return n.indexOf(' '+c+' ')!==-1; });
+  var time = TIME_EXPR.some(function(x){ return n.indexOf(' '+x+' ')!==-1; }) || / hace (un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|unos|unas|muchos|muchas|\d+) /.test(n);
+  var cause = / porque /.test(n) || /(^|[.!?\n]\s*)¿?¡?como /i.test(raw.trim());
+  var conseq = / por eso | asi que /.test(n);
+  var errs = [];
+  if(/(^|[^a-zñáéíóú])(pagé|llegé|empezé|buscé|sacé|tocé|jugé)(?=[^a-zñáéíóú]|$)/i.test(raw)) errs.push('pagé → pagué (-car, -gar, -zar)');
+  if(/\byo (compre|pague|viaje|visite|llegue|mire|busque|regatee|gaste)\b/i.test(raw)) errs.push('yo compre → yo compré (accent)');
+  if(/\b(comio|salio|vivio|perdio|escribio|bebio|aprendio|recibio|compro|pago|viajo|visito)\b/.test(raw.toLowerCase()) && /\b(él|ella|mi \w+|usted) (comio|salio|vivio|perdio|escribio|bebio|aprendio|recibio|compro|pago|viajo|visito)\b/i.test(raw)) errs.push('él compro → él compró (accent)');
+  if(/ (un|una|dos|tres|\d+) (dia|dias|semana|semanas|mes|meses|ano|anos) hace /.test(n)) errs.push('dos años hace → hace dos años');
+  if(/ semana pasado | (ano|mes|verano|lunes|sabado|domingo) pasada /.test(n)) errs.push('la semana pasada · el año pasado');
+  return { title:title, ings:ings, ingRaw:ingRaw, raw:raw, words:w.length, sentences:sentences, pret:pret, compre:compre, pague:pague, price:price, time:time, cause:cause, conseq:conseq, errs:errs };
+}
+function taskCriteria(){
+  var a = taskAnalysis();
+  return [
+    { label:'<b>¿Dónde?</b> Nombre del mercado o la tienda', met: a.title.length>1, txt:'dónde' },
+    { label:'<b>2+ compras</b> en la lista ('+a.ings.length+')', met: a.ings.length>=2, txt:'2+ compras' },
+    { label:'<b>8+ oraciones</b> completas ('+a.sentences+')', met: a.sentences>=8, txt:'8+ oraciones' },
+    { label:'<b>6+ verbos en pretérito</b> ('+(a.pret.slice(0,5).join(', ')||'viajé, comí…')+(a.pret.length>5?'…':'')+')', met: a.pret.length>=6, txt:'6+ verbos en pretérito' },
+    { label:'<b>compré</b> y <b>pagué</b>', met: a.compre && a.pague, txt:'compré y pagué' },
+    { label:'<b>Un precio con moneda</b> (80 quetzales, 3 dólares…)', met: a.price, txt:'precio con moneda' },
+    { label:'<b>Una expresión de tiempo</b> (ayer, el sábado pasado, hace dos años…)', met: a.time, txt:'expresión de tiempo' },
+    { label:'<b>Una causa</b> con porque o como', met: a.cause, txt:'causa: porque / como' },
+    { label:'<b>Una consecuencia</b> con por eso o así que', met: a.conseq, txt:'consecuencia: por eso / así que' },
+    { label:'<b>Sin errores comunes</b> (no <em>pagé</em>, no <em>yo compre</em>…)', met: a.words>0 && a.errs.length===0, txt:'sin errores comunes' }
+  ];
+}
+var taskChecked = false;
+function renderTask(){
+  var a = taskAnalysis(), crit = taskCriteria();
+  document.getElementById('taskWc').textContent = a.ings.length+' compras · '+a.sentences+' oraciones · '+a.words+' palabras';
+  document.getElementById('taskChecklist').innerHTML = crit.map(function(c){ return '<li class="'+(c.met?'met':'')+'">'+c.label+'</li>'; }).join('');
+}
+function checkTask(){
+  var a = taskAnalysis(), crit = taskCriteria(), met = crit.filter(function(c){return c.met;}).length;
+  taskChecked = true; renderTask();
+  if(!a.raw){ setMsg('rsTask', false, 'Escribe tu historia primero.'); updateCompletion(); return; }
+  var msg = met+' / '+crit.length+' criterios cumplidos.';
+  if(a.errs.length) msg += ' Revisa: '+a.errs.join('; ')+'.';
+  if(met===crit.length) msg += ' ¡Excelente! Tu historia está lista para entregar. ✓';
+  setMsg('rsTask', met===crit.length, msg); updateCompletion();
+}
+function resetTask(){ ['recTitle','recIng','taskText'].forEach(function(id){ document.getElementById(id).value=''; }); taskChecked=false; renderTask(); document.getElementById('rsTask').className='res-msg'; document.getElementById('rsTask').textContent=''; updateCompletion(); }
+
+/* ── Video Log 2 · Diario de viaje ── */
+var VL_IRREG = ['fui','fuiste','fue','fuimos','fueron','hice','hiciste','hizo','hicimos','hicieron'];
+var VL_PARTS = [
+  { t:'Opening · destination and when', es:'Presentación', d:'Greet your viewer, name your destination and say when you went (or, if it is imagined, when you traveled in your story). Use <em>fui a…</em> or <em>viajé a…</em> in the preterite, with a time expression.',
+    tags:['fui a / viajé a','expresión de tiempo'], starters:['¡Hola! Me llamo … y hoy les voy a contar sobre mi viaje a …','El verano pasado fui a … con …','Hace … años viajé a … porque …'],
+    check:function(n){ var a=/\b(fui|fuimos|viaje|viajamos)\s+a\b/.test(n), b=vlTime(n); return { ok:a&&b, msg:(a?'✓ fui a / viajé a':'✗ add fui a… or viajé a…')+' · '+(b?'✓ time expression':'✗ add el año pasado, hace dos años…') }; } },
+  { t:'The story · 3 or 4 key events', es:'Lo que pasó', d:'Narrate 3 or 4 important things that happened on the trip, in order. Mix regular preterite verbs (<em>llegué, visité, comí</em>) with irregular ones (<em>fui, fue, hice</em>).',
+    tags:['pretérito regular','pretérito irregular','primero, después…'], starters:['Primero, llegué a … y me alojé en …','Al día siguiente, fuimos a … y visitamos …','Después, comí … en un restaurante …','También hice una excursión a …','Fue un día increíble porque …'],
+    check:function(n, raw){ var p=vlPret(raw).length, i=vlIrreg(n).length; return { ok:p>=4&&i>=1, msg:(p>=4?'✓ ':'✗ ')+p+' / 4 preterite verbs · '+(i>=1?'✓ irregular (fui, hice…)':'✗ add fui, fue or hice') }; } },
+  { t:'One moment · the progressive', es:'Un momento especial', d:'Describe one moment that was in progress when something happened: <em>Estaba recorriendo ___ cuando ___.</em>',
+    tags:['estaba + -ando / -iendo','cuando'], starters:['Un día, estaba recorriendo … cuando …','Estábamos comiendo en … cuando de repente …','Estaba sacando fotos en … cuando vi …'],
+    check:function(n){ var p=vlProg(n), c=/\bcuando\b/.test(n); return { ok:p&&c, msg:(p?'✓ estaba + -ando / -iendo':'✗ add estaba recorriendo…')+' · '+(c?'✓ cuando':'✗ add cuando…') }; } },
+  { t:'People and places · relative clauses', es:'Gente y lugares', d:'Describe at least 2 people or places you found on the trip, using <em>que</em> or <em>donde</em>.',
+    tags:['que','donde'], starters:['Conocí a una señora que …','Visité un mercado donde …','El hostal donde me alojé …','Mi guía era un chico que …'],
+    check:function(n){ var r=vlRel(n); return { ok:r>=2, msg:(r>=2?'✓ ':'✗ ')+r+' / 2 relative clauses (que, donde)' }; } },
+  { t:'Next time · ir a + infinitive', es:'Mi próximo viaje', d:'Say what you are going to do differently on your next trip.',
+    tags:['ir a + infinitivo'], starters:['En mi próximo viaje, voy a …','La próxima vez no voy a … porque …','También voy a ahorrar más dinero, así que …'],
+    check:function(n){ var f=vlIrA(n); return { ok:f, msg:f?'✓ ir a + infinitive':'✗ add voy a + infinitive' }; } },
+  { t:'Closing · why it mattered', es:'Conclusión', d:'Tell your viewer why this trip was important to you and say goodbye. Connect your ideas with <em>porque, como, por eso</em> and <em>así que</em>.',
+    tags:['porque · como','por eso · así que'], starters:['Como me encantó …, por eso quiero volver.','Este viaje fue especial porque …','Aprendí mucho, así que …','¡Gracias por ver mi video! ¡Hasta la próxima!'],
+    check:function(n, raw){ var c=vlConn(n, raw).length; return { ok:c>=1, msg:(c>=1?'✓ ':'✗ ')+c+' connector'+(c===1?'':'s')+(c?': '+vlConn(n, raw).join(', '):' (porque, como, por eso, así que)') }; } }
+];
+function vlTime(n){ return /\b(ayer|anoche|anteayer|pasado|pasada|una vez)\b/.test(n) || /\bhace (un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|unos|unas|muchos|muchas|\d+)\b/.test(n) || /\ben (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|\d{4})\b/.test(n); }
+function vlPret(raw){ return pretTokens(raw).concat(vlIrreg(normalize(raw)).filter(function(x){ return pretTokens(raw).indexOf(x)===-1; })); }
+function vlIrreg(n){ var set={}; wordsOf(n).forEach(function(x){ if(VL_IRREG.indexOf(x)!==-1) set[x]=true; }); return Object.keys(set); }
+function vlRegular(raw){ return pretTokens(raw).filter(function(x){ return VL_IRREG.indexOf(x)===-1; }); }
+function vlProg(n){ return /\b(estaba|estabas|estabamos|estaban|estoy|estas|esta|estamos|estan)\s+[a-zñ]+(ando|iendo|yendo)\b/.test(n); }
+function vlRel(n){ var m=n.match(/\b(el|la|los|las|un|una|unos|unas|mi|mis|su|sus|este|esta|ese|esa|al)\s+([a-zñ]+\s+){1,2}(que|donde|quien|quienes)\s+[a-zñ]+/g); return m?m.length:0; }
+function vlIrA(n){ return /\b(voy|vas|va|vamos|van)\s+a\s+[a-zñ]+(ar|er|ir)(me|te|se|nos|lo|la|los|las)?\b/.test(n); }
+function vlConn(n, raw){ var out=[]; if(/\bporque\b/.test(n)) out.push('porque'); if(/(^|[.!?;¡¿]\s*)como\b/i.test((raw||'').trim())) out.push('como'); if(/\bpor eso\b/.test(n)) out.push('por eso'); if(/\basi que\b/.test(n)) out.push('así que'); return out; }
+var vlCamera = false;
+function vlText(i){ return val('vl'+i); }
+function vlAll(){ return VL_PARTS.map(function(_, i){ return vlText(i); }).filter(Boolean).join('\n'); }
+function vlAnalysis(){
+  var raw=vlAll(), n=normalize(raw), w=wordsOf(raw);
+  var conn=[]; VL_PARTS.forEach(function(_, i){ vlConn(normalize(vlText(i)), vlText(i)).forEach(function(c){ if(conn.indexOf(c)===-1) conn.push(c); }); });
+  var errs=[];
+  if(/(^|[^a-zñáéíóú])(fuí|fué|fuíste|fuímos)(?=[^a-zñáéíóú]|$)/i.test(raw)) errs.push('fui, fue: no accent');
+  if(/\b(hize|hiso|hizimos|hizieron)\b/i.test(raw)) errs.push('hice, hizo, hicimos');
+  if(/\b(fuistes|hicistes|comistes|viajastes)\b/i.test(raw)) errs.push('tú: fuiste, hiciste (no -s)');
+  if(/(^|[^a-zñáéíóú])(pagé|llegé|empezé|buscé|sacé)(?=[^a-zñáéíóú]|$)/i.test(raw)) errs.push('pagué, llegué, empecé, busqué, saqué');
+  if(/\b(voy|vas|va|vamos|van) (?!a )[a-zñ]+(ar|er|ir)\b/.test(n)) errs.push('voy a + infinitivo (don\'t drop the a)');
+  return { raw:raw, words:w.length, mins:w.length/100, reg:vlRegular(raw), irr:vlIrreg(n), prog:vlProg(n), rel:vlRel(n), ira:vlIrA(n), conn:conn, errs:errs };
+}
+function vlCriteria(){
+  var a=vlAnalysis();
+  return [
+    { txt:'2 to 3 minutes', label:'<b>2 a 3 minutos</b> (≈ 200 to 300 words · '+a.words+')', met: a.words>=200 && a.words<=330 },
+    { txt:'regular preterite', label:'<b>Pretérito regular</b> · 3+ ('+(a.reg.slice(0,5).join(', ')||'viajé, comí…')+(a.reg.length>5?'…':'')+')', met: a.reg.length>=3 },
+    { txt:'irregular preterite (hacer / ir / ser)', label:'<b>Pretérito irregular</b> · hacer / ir / ser ('+(a.irr.join(', ')||'fui, fue, hice…')+')', met: a.irr.length>=1 },
+    { txt:'progressive', label:'<b>Progresivo</b> · estaba + -ando / -iendo', met: a.prog },
+    { txt:'relative clauses', label:'<b>Cláusulas relativas</b> · que / donde ('+a.rel+' / 2)', met: a.rel>=2 },
+    { txt:'ir a + infinitive', label:'<b>ir a + infinitivo</b> · voy a…', met: a.ira },
+    { txt:'connectors of cause or consequence', label:'<b>Conectores</b> · porque, como, por eso, así que ('+a.conn.length+' / 4'+(a.conn.length?': '+a.conn.join(', '):'')+')', met: a.conn.length>=1 },
+    { txt:'speak directly to camera', label:'<b>Hablo directamente a la cámara</b> <span style="font-weight:400">(click to confirm after you practice)</span>', met: vlCamera, manual:true }
+  ];
+}
+function buildVL(){
+  var c=document.getElementById('vlParts');
+  c.innerHTML = VL_PARTS.map(function(p, i){
+    return '<div class="vl-part" id="vlp'+i+'"><div class="vl-part-head"><span class="vl-num">'+(i+1)+'</span><div style="flex:1;min-width:0;"><h4>'+p.t+' · <em style="font-weight:400">'+p.es+'</em></h4><div class="vl-desc">'+p.d+'</div>'+
+      '<div class="vl-tags">'+p.tags.map(function(t){ return '<span class="vl-tag">'+t+'</span>'; }).join('')+'</div>'+
+      '<div class="vl-starters">'+p.starters.map(function(s, j){ return '<button type="button" class="vl-starter" onclick="addStarter('+i+','+j+')">+ '+s+'</button>'; }).join('')+'</div>'+
+      '<label for="vl'+i+'" style="position:absolute;left:-9999px;">Part '+(i+1)+'</label><textarea id="vl'+i+'" placeholder="Escribe aquí la parte '+(i+1)+'…" spellcheck="false"></textarea>'+
+      '<div class="vl-part-fb" id="vlfb'+i+'"></div></div></div></div>';
+  }).join('');
+  renderVL();
+}
+function addStarter(i, j){
+  var ta=document.getElementById('vl'+i), s=VL_PARTS[i].starters[j];
+  ta.value = ta.value.trim() ? ta.value.replace(/\s+$/,'')+' '+s : s;
+  ta.focus(); var pos=ta.value.indexOf('…', ta.value.length - s.length); if(pos>-1){ ta.setSelectionRange(pos, pos+1); }
+  renderVL(); updateCompletion();
+}
+function fmtMin(m){ var s=Math.round(m*60); return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2); }
+function renderVL(){
+  VL_PARTS.forEach(function(p, i){
+    var t=vlText(i), fb=document.getElementById('vlfb'+i), box=document.getElementById('vlp'+i);
+    if(!t){ fb.textContent=''; box.classList.remove('met'); return; }
+    var r=p.check(normalize(t), t); box.classList.toggle('met', r.ok);
+    fb.innerHTML = r.msg.split(' · ').map(function(x){ return '<span class="'+(x.charAt(0)==='✓'?'ok':'ng')+'">'+x+'</span>'; }).join(' · ');
+  });
+  var a=vlAnalysis(), crit=vlCriteria(), met=crit.filter(function(c){return c.met;}).length;
+  document.getElementById('vlWords').textContent = a.words+' palabras';
+  document.getElementById('vlTime').textContent = '≈ '+fmtMin(a.mins)+' min';
+  document.getElementById('vlFill').style.width = Math.min(100, a.mins/4*100)+'%';
+  document.getElementById('vlPill').textContent = met+' / '+crit.length;
+  document.getElementById('vlChecklist').innerHTML = crit.map(function(c){ return '<li class="'+(c.met?'met':'')+'"'+(c.manual?' style="cursor:pointer" role="checkbox" tabindex="0" aria-checked="'+c.met+'" onclick="toggleCamera()" onkeydown="if(event.key===\' \'||event.key===\'Enter\'){event.preventDefault();toggleCamera();}"':'')+'>'+c.label+'</li>'; }).join('');
+  var parts=VL_PARTS.map(function(p, i){ var t=vlText(i); return t?'<p><b>'+(i+1)+' · '+p.es.toUpperCase()+'</b>'+escapeHtml(t)+'</p>':''; }).join('');
+  document.getElementById('vlScript').innerHTML = parts || '<span class="blanktxt">Your script will appear here as you write each part.</span>';
+  document.getElementById('vlErrs').textContent = a.errs.length ? 'Revisa: '+a.errs.join(' · ') : (a.words>30 && a.reg.length<1 ? 'Tip: write the accents (viajé, comí) so the checker can find your preterite verbs.' : '');
+}
+function toggleCamera(){ vlCamera=!vlCamera; renderVL(); updateCompletion(); }
+function speakScript(){ var parts=VL_PARTS.map(function(_, i){ return vlText(i); }).filter(Boolean); if(!parts.length){ setMsg('rsVL', false, 'Escribe tu guion primero.'); return; } speak(parts); }
+/* Practice mode + timer */
+var tStart=0, tAcc=0, tInt=null;
+function openPractice(){
+  var parts=VL_PARTS.map(function(p, i){ var t=vlText(i); return t?'<p><b>'+(i+1)+' · '+p.es+'</b>'+escapeHtml(t)+'</p>':''; }).join('');
+  document.getElementById('vlPrompter').innerHTML = parts || '<p>Escribe tu guion primero.</p>';
+  document.getElementById('vlModal').hidden=false; document.getElementById('vlTimerBtn').focus();
+}
+function closePractice(){ document.getElementById('vlModal').hidden=true; if(tInt) toggleTimer(); }
+function timerNow(){ return tAcc + (tInt ? (Date.now()-tStart)/1000 : 0); }
+function paintTimer(){ var s=Math.floor(timerNow()), el=document.getElementById('vlTimer'); el.textContent=Math.floor(s/60)+':'+('0'+(s%60)).slice(-2); el.className='vl-timer'+(s>=120&&s<=180?' in':(s>180?' over':'')); document.getElementById('vlZoneNote').textContent = s<120?'Goal: 2:00 to 3:00':(s<=180?'In the target zone. ¡Muy bien!':'Over 3:00. Try to trim a little.'); }
+function toggleTimer(){ var btn=document.getElementById('vlTimerBtn'); if(tInt){ tAcc=timerNow(); clearInterval(tInt); tInt=null; btn.textContent='Start'; } else { tStart=Date.now(); tInt=setInterval(paintTimer,250); btn.textContent='Pause'; } paintTimer(); }
+function resetTimer(){ if(tInt){ clearInterval(tInt); tInt=null; } tAcc=0; document.getElementById('vlTimerBtn').textContent='Start'; paintTimer(); }
+document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !document.getElementById('vlModal').hidden) closePractice(); });
+/* Save / open draft as plain text */
+function saveDraft(){
+  var name=val('studentName')||'estudiante';
+  var txt='VIDEO LOG 2 · DIARIO DE VIAJE\nEstudiante: '+name+'\n\n'+VL_PARTS.map(function(p, i){ return '### '+(i+1)+' · '+p.es+'\n'+vlText(i); }).join('\n\n')+'\n';
+  var blob=new Blob([txt],{type:'text/plain;charset=utf-8'}), url=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=url; a.download='VideoLog2_borrador_'+name.replace(/[^a-z0-9]+/gi,'_')+'.txt'; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); },1000);
+  setMsg('rsVL', true, 'Borrador guardado. ✓');
+}
+function openDraft(input){
+  var f=input.files && input.files[0]; if(!f) return;
+  var rd=new FileReader();
+  rd.onload=function(){
+    var chunks=String(rd.result).split(/^### (\d) · .*$/m), found=0;
+    for(var k=1;k<chunks.length;k+=2){ var i=parseInt(chunks[k],10)-1, el=document.getElementById('vl'+i); if(el){ el.value=(chunks[k+1]||'').trim(); found++; } }
+    var nm=String(rd.result).match(/^Estudiante: (.+)$/m); if(nm && !val('studentName') && nm[1]!=='estudiante') document.getElementById('studentName').value=nm[1].trim();
+    renderVL(); updateCompletion();
+    setMsg('rsVL', found>0, found>0?'Borrador abierto: '+found+' partes. ✓':'No encontré partes en este archivo. Usa un archivo de «Guardar borrador».');
+    input.value='';
+  };
+  rd.readAsText(f);
+}
+function resetVL(){ VL_PARTS.forEach(function(_, i){ document.getElementById('vl'+i).value=''; }); vlCamera=false; renderVL(); updateCompletion(); document.getElementById('rsVL').className='res-msg'; document.getElementById('rsVL').textContent=''; }
+
+/* ── Speed challenge ── */
+var gameData = [
+  {p:'Ayer yo ___ a Seattle.', a:'viajé', o:['viajé','viaje','viajó'], h:'viajar · yo'},
+  {p:'Ella ___ en el mercado.', a:'comió', o:['comió','comí','comé'], h:'comer · ella'},
+  {p:'Anoche nosotros ___ tarde.', a:'salimos', o:['salimos','salemos','salieron'], h:'salir · nosotros'},
+  {p:'Los turistas ___ el museo.', a:'visitaron', o:['visitaron','visitieron','visitó'], h:'visitar · ellos'},
+  {p:'¿Tú ___ una postal?', a:'escribiste', o:['escribiste','escribistes','escribió'], h:'escribir · tú'},
+  {p:'Yo ___ en efectivo.', a:'pagué', o:['pagué','pagé','pagó'], h:'pagar · yo'},
+  {p:'Yo ___ al aeropuerto a las cinco.', a:'llegué', o:['llegué','llegé','llegó'], h:'llegar · yo'},
+  {p:'Ustedes ___ mucho en el viaje.', a:'aprendieron', o:['aprendieron','aprendaron','aprendió'], h:'aprender · ustedes'},
+  {p:'Viajé a Perú ___ dos años.', a:'hace', o:['hace','hay','desde'], h:'ago'},
+  {p:'La semana ___ compré la maleta.', a:'pasada', o:['pasada','pasado','pasa'], h:'last week'},
+  {p:'No tengo dinero, ___ no compré nada.', a:'así que', o:['así que','porque','como'], h:'consecuencia'},
+  {p:'___ no tengo dinero, no compré nada.', a:'Como', o:['Como','Así que','Por eso'], h:'causa al principio'}
+];
+var gIdx=0, gScore=0, gStreak=0, gFinished=false, gLock=false;
+function startGame(){
+  gIdx=0; gScore=0; gStreak=0; gFinished=false; gLock=false;
+  document.getElementById('gScore').textContent='0'; document.getElementById('gStreak').textContent='0';
+  document.getElementById('gFb').textContent=''; document.getElementById('gFb').className='game-feedback';
+  showGameQ(); updateCompletion();
+}
+function showGameQ(){
+  var q = gameData[gIdx];
+  document.getElementById('gNum').textContent = (gIdx+1)+'/'+gameData.length;
+  document.getElementById('gPrompt').textContent = q.p;
+  document.getElementById('gSub').textContent = 'Choose the missing word ('+q.h+').';
+  var opts = q.o.slice();
+  for(var k=opts.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=opts[k]; opts[k]=opts[r]; opts[r]=t; }
+  document.getElementById('gOpts').innerHTML = opts.map(function(o){ return '<button type="button" class="game-opt" onclick="pickGame(this,\''+o.replace(/'/g,"\\'")+'\')">'+o+'</button>'; }).join('');
+  gLock=false;
+}
+function pickGame(el, choice){
+  if(gLock) return; gLock=true;
+  var q = gameData[gIdx], fb = document.getElementById('gFb'), full = q.p.replace('___', q.a);
+  var ok = choice === q.a;
+  document.querySelectorAll('#gOpts .game-opt').forEach(function(b){ if(b.textContent===q.a) b.classList.add('is-correct'); });
+  if(ok){ gScore++; gStreak++; fb.textContent='✓ ¡Correcto! '+full; fb.className='game-feedback ok'; }
+  else { gStreak=0; el.classList.add('is-wrong'); fb.textContent='✗ '+full; fb.className='game-feedback ng'; }
+  document.getElementById('gScore').textContent=gScore; document.getElementById('gStreak').textContent=gStreak;
+  setTimeout(function(){
+    gIdx++;
+    if(gIdx < gameData.length){ showGameQ(); }
+    else { gFinished=true; document.getElementById('gPrompt').innerHTML='<span class="game-done">¡Fin! '+gScore+' / '+gameData.length+'</span>'; document.getElementById('gSub').textContent = gScore===gameData.length?'¡Perfecto! Dominas el capítulo 6.1.':'Pulsa "Restart Game" para intentarlo de nuevo.'; document.getElementById('gOpts').innerHTML=''; document.getElementById('gNum').textContent=gameData.length+'/'+gameData.length; }
+    updateCompletion();
+  }, 1100);
+}
+
+/* ── Completion meter ── */
+var BLANK_SETS = [['e1_',8,'Ej 1 · pretérito -ar'],['e2_',8,'Ej 2 · pretérito -er / -ir'],['e3_',6,'Ej 3 · -car, -gar, -zar y reflexivos'],['e4_',6,'Ej 4 · expresiones de tiempo'],['e5_',8,'Ej 5 · conectores']];
+function idsFilled(prefix, n){ var out=[]; for(var i=1;i<=n;i++) out.push(val(prefix+i).length>0); return out; }
+var completionGroups = [
+  { label:'Nombre', tab:'ov', items:function(){ return [val('studentName').length>0]; } },
+  { label:'Vocabulario', tab:'vo', items:function(){ var a=[]; for(var i=0;i<flashTotal();i++) a.push(i<flashDone()); return a; } },
+  { label:'Ejercicios', tab:'ej', items:function(){
+      var a=[]; BLANK_SETS.forEach(function(b){ a=a.concat(idsFilled(b[0],b[1])); });
+      return a.concat(placeData.map(function(_, i){ return quizState['place'][i]!==null; }), readData.map(function(_, i){ return quizState['read'][i]!==null; }), shortData.map(function(_, i){ return val('sa'+i).length>0; })); } },
+  { label:'Tarea', tab:'ta', items:function(){ return [val('recTitle').length>0, val('recIng').length>0, val('taskText').length>0, taskChecked]; } },
+  { label:'Video Log 2', tab:'vl', items:function(){ return VL_PARTS.map(function(_, i){ return vlText(i).length>0; }).concat([vlCamera]); } },
+  { label:'Juegos', tab:'ju', items:function(){ return [MATCH.w.finished, MATCH.m.finished, gFinished].concat(quizData.map(function(_, i){ return quizState['quiz'][i]!==null; })); } }
+];
+function completionStats(){ return completionGroups.map(function(g){ var a=g.items(); return { label:g.label, tab:g.tab, done:a.filter(Boolean).length, total:a.length }; }); }
+
+/* ── Live score ── */
+function blanksCorrect(prefix, n){ var c=0; for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(el && blankOk(el)) c++; } return c; }
+function computeScore(){
+  var correct=0, total=0;
+  BLANK_SETS.forEach(function(b){ correct+=blanksCorrect(b[0],b[1]); total+=b[1]; });
+  correct += mcCorrect('place'); total += placeData.length;
+  correct += mcCorrect('read'); total += readData.length;
+  shortData.forEach(function(_, i){ if(val('sa'+i) && gradeShort(i).ok) correct++; }); total += shortData.length;
+  var crit = taskCriteria(); correct += crit.filter(function(c){return c.met;}).length; total += crit.length;
+  var vc = vlCriteria(); correct += vc.filter(function(c){return c.met;}).length; total += vc.length;
+  correct += MATCH.w.matched + MATCH.m.matched; total += MATCH.w.data.length + MATCH.m.data.length;
+  correct += mcCorrect('quiz'); total += quizData.length;
+  correct += gScore; total += gameData.length;
+  return { correct:correct, total:total };
+}
+function updateScore(){ var s=computeScore(); var pct=s.total?Math.round(s.correct/s.total*100):0; var el=document.getElementById('completionScore'); if(el) el.textContent='★ '+pct+'% correcto'; }
+var READY = false;
+function updateCompletion(){
+  if(!READY) return;
+  var stats = completionStats(), d=0, t=0;
+  stats.forEach(function(g){ d+=g.done; t+=g.total; });
+  var pct = t ? Math.round(d/t*100) : 0;
+  document.getElementById('completionPct').textContent = pct+'%';
+  document.getElementById('pf').style.width = pct+'%';
+  document.getElementById('completionLegend').innerHTML = stats.map(function(g){ return '<button type="button" class="legend-pill '+(g.done===g.total?'done':'')+'" onclick="jumpTab(\''+g.tab+'\')">'+g.label+' '+g.done+'/'+g.total+'</button>'; }).join('');
+  updateScore();
+}
+function jumpTab(tab){ var btns=document.querySelectorAll('.tab'); for(var i=0;i<btns.length;i++){ if((btns[i].getAttribute('onclick')||'').indexOf("'"+tab+"'")!==-1){ switchTab(tab, btns[i]); return; } } switchTab(tab, null); }
+document.addEventListener('input', function(e){ if(e.target && /^(taskText|recIng|recTitle)$/.test(e.target.id)) renderTask(); if(e.target && /^vl\d$/.test(e.target.id)) renderVL(); updateCompletion(); });
+document.addEventListener('change', updateCompletion);
+
+/* ── Student report ── */
+function escapeHtml(str){ return (str==null?'':String(str)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function stripTags(html){ var dv=document.createElement('div'); dv.innerHTML=html||''; return (dv.textContent||'').replace(/\s+/g,' ').trim(); }
+function reportTable(title, scoreText, groups){
+  var blocks = groups.map(function(g){
+    var rows = g.items.map(function(it){ return '<tr class="'+(it.value?(it.ok?'ok':'bad'):'blank')+'"><td class="num">'+escapeHtml(it.label)+'</td><td>'+(it.value?escapeHtml(it.value):'<span class="blanktxt">(en blanco)</span>')+'</td><td class="note">'+escapeHtml(it.msg||'')+'</td><td class="mark">'+(it.value?(it.ok?'✓':'✗'):'·')+'</td></tr>'; }).join('');
+    return '<h3>'+escapeHtml(g.heading)+'</h3><table><tbody>'+rows+'</tbody></table>';
+  }).join('');
+  return (title?'<h2>'+escapeHtml(title)+'<span class="score">'+escapeHtml(scoreText)+'</span></h2>':'')+blocks;
+}
+function collectBlanks(prefix, n, heading){
+  var items=[], correct=0;
+  for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(!el) continue; var v=(el.value||'').trim(), expected=answersOf(el).join(' / '); var ok=blankOk(el); if(ok) correct++; items.push({ label:String(i), value:v, ok:ok, msg: ok?(blankExact(el)?'Correcto.':'Correcto. Acento: '+answersOf(el)[0]):'Respuesta: '+expected }); }
+  return { heading:heading, items:items, correct:correct, total:items.length };
+}
+function mcItemsFor(key, data){ return data.map(function(item, i){ var ch=quizState[key][i]; return { label:String(i+1), value: ch===null?'':stripTags(item.options[ch]), ok: ch===item.answer, msg: ch===item.answer?'Correcto.':'Correcta: '+stripTags(item.options[item.answer]) }; }); }
+function buildReportHtml(name){
+  var stamp = new Date().toLocaleString('en-US',{ year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  var blanks = BLANK_SETS.map(function(b){ return collectBlanks(b[0], b[1], b[2]); });
+  var blankCorrect=0, blankTotal=0; blanks.forEach(function(g){ blankCorrect+=g.correct; blankTotal+=g.total; });
+  var placeItems = mcItemsFor('place', placeData), placeCorrect = placeItems.filter(function(x){return x.ok;}).length;
+  var readItems = mcItemsFor('read', readData), readCorrect = readItems.filter(function(x){return x.ok;}).length;
+  var saItems = shortData.map(function(s, i){ var v=val('sa'+i), r=gradeShort(i); return { label:s.q, value:v, ok:r.ok, msg:r.msg }; });
+  var saCorrect = saItems.filter(function(x){ return x.ok; }).length;
+  var crit = taskCriteria(), critMet = crit.filter(function(c){return c.met;}).length, a = taskAnalysis();
+  var critItems = crit.map(function(c){ return { label:'Criterio', value:c.txt, ok:c.met, msg:c.met?'Cumplido.':'Falta.' }; });
+  var vla = vlAnalysis(), vlc = vlCriteria(), vlMet = vlc.filter(function(c){return c.met;}).length;
+  var vlItems = vlc.map(function(c){ return { label:'Criterio', value:c.txt, ok:c.met, msg:c.met?'Cumplido.':'Falta.' }; });
+  var vlScript = VL_PARTS.map(function(p, i){ var t=vlText(i); return '<h3>'+(i+1)+' · '+escapeHtml(p.es)+'</h3>'+(t?'<div class="para">'+escapeHtml(t)+'</div>':'<p class="blanktxt">(en blanco)</p>'); }).join('');
+  var mcItems = mcItemsFor('quiz', quizData), mcC = mcItems.filter(function(x){return x.ok;}).length;
+  var matchItems = ['w','m'].map(function(k){ var M=MATCH[k]; return { label: k==='w'?'Juego 1 · En el aeropuerto':'Juego 2 · Monedas', value: M.matched+' / '+M.data.length, ok: M.finished, msg: M.finished?'Completado.':'Sin terminar.' }; });
+  var gameItem = [{ label:'Juego 3 · Reto rápido', value: gFinished?(gScore+' / '+gameData.length):'', ok: gFinished && gScore>=10, msg: gFinished?(gScore>=10?'¡Bien dominado!':'Practica un poco más.'):'Sin terminar.' }];
+  var s = computeScore(), scorePct = s.total?Math.round(s.correct/s.total*100):0;
+  var stats = completionStats(), cd=0, ct=0; stats.forEach(function(g){ cd+=g.done; ct+=g.total; });
+  var cpct = ct?Math.round(cd/ct*100):0;
+  var compRows = stats.map(function(g){ return '<li class="'+(g.done===g.total?'checked':'')+'">'+(g.done===g.total?'☑':'☐')+' '+escapeHtml(g.label)+' · '+g.done+' / '+g.total+'</li>'; }).join('');
+  var blank = '<p class="blanktxt">(en blanco)</p>';
+  var recipe = '<h3>¿Dónde?</h3>'+(a.title?'<div class="para"><strong>'+escapeHtml(a.title)+'</strong></div>':blank)+
+    '<h3>Mis compras</h3>'+(a.ings.length?'<div class="para">'+a.ings.map(escapeHtml).join('<br>')+'</div>':blank)+
+    '<h3>Mi historia</h3>'+(a.raw?'<div class="para">'+escapeHtml(a.raw).replace(/\n/g,'<br>')+'</div>':blank);
+
+  return '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Semana 4 · Reporte · '+escapeHtml(name)+'</title><style>'+
+  "body{font-family:Georgia,'Times New Roman',serif;color:#2A2118;max-width:850px;margin:0 auto;padding:40px 32px;line-height:1.6;}"+
+  'header{border-bottom:4px solid #C45D3A;padding-bottom:16px;margin-bottom:28px;}'+
+  'h1{font-size:1.6rem;color:#1B2A4A;margin:0 0 6px;}'+
+  ".meta{font-family:'Courier New',monospace;font-size:0.78rem;color:#6B5D4A;} .meta strong{color:#1B2A4A;}"+
+  '.summary{background:#FBF5EA;border-left:5px solid #D4A24C;padding:14px 18px;margin-bottom:28px;font-size:0.95rem;}'+
+  'h2{font-size:1.1rem;color:#1B2A4A;margin:32px 0 10px;border-left:5px solid #C45D3A;padding-left:12px;}'+
+  "h3{font-size:0.78rem;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#6B5D4A;margin:18px 0 6px;font-weight:normal;}"+
+  ".score{font-family:'Courier New',monospace;font-size:0.72rem;font-weight:normal;color:#6B5D4A;display:block;padding-top:2px;}"+
+  'table{width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:8px;}'+
+  'td{padding:8px 10px;border-bottom:1px solid #EDE2CE;vertical-align:top;}'+
+  "td.num{color:#6B5D4A;font-family:'Courier New',monospace;font-size:0.75rem;}"+
+  'td.note{font-size:0.78rem;color:#6B5D4A;font-style:italic;} td.mark{text-align:center;font-weight:bold;width:26px;}'+
+  'tr.ok{background:#F2F8EE;} tr.ok td.mark{color:#4C7A3C;} tr.bad{background:#FCF0EE;} tr.bad td.mark{color:#A8452A;}'+
+  '.para{background:#fff;border:1px solid #EDE2CE;border-radius:6px;padding:14px 18px;font-size:0.95rem;line-height:1.7;}'+
+  '.blanktxt{color:#A89A88;} ul.check{list-style:none;padding:0;font-size:0.9rem;} ul.check li{padding:5px 0;border-bottom:1px solid #F2EADB;} ul.check li.checked{color:#4C7A3C;}'+
+  "footer{margin-top:40px;border-top:1px solid #EDE2CE;padding-top:12px;font-family:'Courier New',monospace;font-size:0.68rem;color:#6B5D4A;}"+
+  '@media print{body{padding:0;}h2{page-break-after:avoid;}table{page-break-inside:avoid;}}'+
+  '</style></head><body>'+
+  '<header><h1>Spanish 122 · Semana 4 · Capítulo 6.1 · Viajes</h1><p class="meta"><strong>Estudiante:</strong> '+escapeHtml(name)+' &nbsp;·&nbsp; <strong>Hablar del pasado</strong> &nbsp;·&nbsp; Generado: '+escapeHtml(stamp)+'</p></header>'+
+  '<div class="summary"><strong>Puntuación:</strong> '+s.correct+' / '+s.total+' correctas (<strong>'+scorePct+'%</strong>) · Página completada al <strong>'+cpct+'%</strong> ('+cd+' / '+ct+' elementos)</div>'+
+  '<h2>Progreso por sección</h2><ul class="check">'+compRows+'</ul>'+
+  reportTable('Ejercicios 1 a 5 (fill-in)', blankCorrect+' / '+blankTotal+' correctas', blanks)+
+  reportTable('Ejercicio 6 · Errores comunes', placeCorrect+' / '+placeItems.length+' correctas', [{ heading:'¿Cuál es correcta?', items:placeItems }])+
+  reportTable('Ejercicio 7 · Lectura', readCorrect+' / '+readItems.length+' correctas', [{ heading:'Mi viaje a Oaxaca', items:readItems }])+
+  reportTable('Ejercicio 8 · Respuesta corta', saCorrect+' / '+saItems.length+' válidas', [{ heading:'Sobre ti', items:saItems }])+
+  '<h2>Tarea · Comprar en un mercado<span class="score">'+critMet+' / '+crit.length+' criterios · '+a.ings.length+' compras · '+a.sentences+' oraciones · '+a.words+' palabras</span></h2>'+recipe+
+  reportTable('', '', [{ heading:'Checklist', items:critItems }])+
+  '<h2>Video Log 2 · Borrador del guion<span class="score">'+vlMet+' / '+vlc.length+' criterios · '+vla.words+' palabras · ≈ '+fmtMin(vla.mins)+' min</span></h2>'+vlScript+
+  reportTable('', '', [{ heading:'Checklist', items:vlItems }])+
+  reportTable('Juegos', mcC+' / '+mcItems.length+' en el quiz', [{ heading:'Emparejamiento y reto', items:matchItems.concat(gameItem) }, { heading:'Juego 4 · Opción múltiple', items:mcItems }])+
+  '<footer>South Puget Sound Community College · ESP 122 · Semana 4 · Para entregar como PDF, abre este archivo e imprime y elige Guardar como PDF.</footer></body></html>';
+}
+function downloadReport(){
+  var field=document.getElementById('studentName'), name=(field.value||'').trim();
+  if(!name){ field.focus(); field.style.borderColor='#A8452A'; field.placeholder='Escribe tu nombre primero · Please enter your name'; setTimeout(function(){ field.style.borderColor=''; },2500); return; }
+  var html=buildReportHtml(name); var safe=name.replace(/[^a-z0-9]+/gi,'_').replace(/^_+|_+$/g,'')||'estudiante';
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'}); var url=URL.createObjectURL(blob);
+  var a=document.createElement('a'); a.href=url; a.download='Semana4_Cap6-1_'+safe+'.html'; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); },1000);
+}
+
+/* ── Build everything ── */
+buildFlash('trip','fcTrip','trip-card');
+buildFlash('lodge','fcLodge','sport-card');
+buildFlash('actions','fcActions','');
+buildFlash('time','fcTime','time-card');
+buildFlash('conn','fcConn','conn-card');
+buildFlash('shop','fcShop','nat-card');
+buildMC(placeData, 'place', 'placeCont');
+buildMC(readData, 'read', 'readCont');
+buildMC(quizData, 'quiz', 'quizCont');
+buildMatch('w');
+buildMatch('m');
+buildShort();
+renderTask();
+buildVL();
+READY = true;
+startGame();
+updateCompletion();
+
+</script>
+</body>
+</html>
